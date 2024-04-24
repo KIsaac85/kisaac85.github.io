@@ -1,5 +1,7 @@
 import { useState } from 'react'
-
+import Aboutme from './Aboutme.jsx'
+import Home from "./Home.jsx"
+import Heading from './Header.jsx'
 
 
 function App() {
@@ -8,7 +10,10 @@ function App() {
   return (
 
     <div>
-      <span class="subheading">Hello!</span>
+          <Heading/>
+    <Home />
+    <Aboutme/>
+      {/* <span class="subheading">Hello!</span>
       <h1 class="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>
        <h2 class="mb-4">A Freelance Full Stack Web Developer</h2>
     </div>
@@ -18,7 +23,7 @@ function App() {
   //     <h1 class="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>
   //     <h2 class="mb-4">A Freelance Full Stack Web Developer</h2>
   //     <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-  //   </div>
+  //   </div> */}
   // </div>
   )
 }
