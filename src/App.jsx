@@ -4,7 +4,7 @@ import Home from "./Home.jsx"
 import Heading from './Header.jsx'
 import Resume from './Resume.jsx'
 import Skills from './Skills.jsx'
-
+import Projects from "./Projects.jsx"
 
 function App() {
  
@@ -17,6 +17,7 @@ function App() {
     <Aboutme/>
     <Resume/>
   <Skills/>
+  <Projects/>
    </div>
   )
 }
