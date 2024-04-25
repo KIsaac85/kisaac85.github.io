@@ -2,7 +2,7 @@ import React, { useState , useEffect} from 'react'
 import image1 from "./images/2.jpg"
 
 
-function Home(props) {
+function Home() {
   const [role, setRole] = useState("A Freelance Full Stack Web Developer")
 
   // const interval = setInterval(() => {
@@ -60,7 +60,7 @@ useEffect(()=>{
        </div>
        
          
-	          	</div>
+	  </div>
     </div>
 
   )

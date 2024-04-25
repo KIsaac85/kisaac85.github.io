@@ -21,7 +21,9 @@ function Heading() {
         <li className="nav-item">
           <a className="nav-link" href="#" >Resume</a>
         </li>
-
+        <li className="nav-item">
+          <a className="nav-link" href="#" >Skills</a>
+        </li>
         <li className="nav-item">
           <a className="nav-link" href="#" >Projects</a>
         </li>        
