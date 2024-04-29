@@ -45,7 +45,7 @@ useEffect(()=>{
     <div>
       
               
-  <div style={{display:"flex",margin:"100px"}}>  
+  <div id="home" style={{display:"flex",margin:"100px"}}>  
       <div >
         <span className="subheading">Hello!</span>
       <h1 className="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>

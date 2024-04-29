@@ -5,6 +5,7 @@ import Heading from './Header.jsx'
 import Resume from './Resume.jsx'
 import Skills from './Skills.jsx'
 import Projects from "./Projects.jsx"
+import ContactMe from './ContactMe.jsx'
 
 function App() {
  
@@ -16,8 +17,9 @@ function App() {
     <Home />
     <Aboutme/>
     <Resume/>
-  <Skills/>
-  <Projects/>
+    <Skills/>
+    <Projects/>
+    <ContactMe/>
    </div>
   )
 }
