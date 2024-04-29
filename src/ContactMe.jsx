@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
 function ContactMe() {
+  const [formValues,setformValues] = useState({
+    fname:"",
+    email:"",
+    subject:"",
+    message:""
+  })
+  function handleOnChange(event) {
+    const{name,value}=event.target; 
+    setformValues((prevValue)=>{
+      return{
+        ...prevValue,
+        [name]:value
+      }
+    })
+  }
+  
     return(
         <section className="ftco-section contact-section ftco-no-pb" id="contact-section">
         <div className="container">
@@ -49,16 +65,16 @@ function ContactMe() {
             <div className="col-md-6 order-md-last d-flex">
               <form action="#" className="bg-light p-4 p-md-5 contact-form">
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Your Name"/>
+                  <input name="fname" onChange={handleOnChange} type="text" className="form-control" placeholder="Your Name"/>
                 </div>
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Your Email"/>
+                  <input name="email" onChange={handleOnChange} type="text" className="form-control" placeholder="Your Email"/>
                 </div>
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Subject"/>
+                  <input name="subject" onChange={handleOnChange} type="text" className="form-control" placeholder="Subject"/>
                 </div>
                 <div className="form-group">
-                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
+                  <textarea name="message" onChange={handleOnChange} id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
                 </div>
                 <div className="form-group">
                   <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5"/>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Aboutme from './Aboutme.jsx'
+import AboutMe from './AboutMe.jsx'
 import Home from "./Home.jsx"
 import Heading from './Header.jsx'
 import Resume from './Resume.jsx'
@@ -15,7 +15,7 @@ function App() {
     <div>
     <Heading/>
     <Home />
-    <Aboutme/>
+    <AboutMe/>
     <Resume/>
     <Skills/>
     <Projects/>

@@ -30,15 +30,7 @@ function Aboutme() {
     </ul>
     </div>
     </div>
-    <div className="counter-wrap ftco-animate d-flex mt-md-3">
-    <div className="text">
-    <p className="mb-4">
-    <span className="number" data-number="120">0</span>
-    <span>Project complete</span>
-    </p>
-    <p><a href="#" className="btn btn-primary py-3 px-3">Download CV</a></p>
-    </div>
-    </div>
+   
     </div>
     </div>
 

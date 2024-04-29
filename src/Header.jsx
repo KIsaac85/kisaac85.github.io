@@ -22,7 +22,7 @@ import {Link} from "react-scroll";
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li className="nav-item">
-          <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="nav-link active" aria-current="page" href="#">Home</Link>
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="nav-link " aria-current="page" href="#">Home</Link>
         </li>
 
         <li className="nav-item">
