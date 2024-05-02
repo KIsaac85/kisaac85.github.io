@@ -18,7 +18,7 @@ function ContactMe() {
   })
   const [hiddenDiv,setHiddenDiv]= useState(true)
 
-  async function onSubmit(data){
+  async function onSubmit(data,e){
     const{fname,email,subject,message}=data; 
     
     setformValues({
@@ -34,7 +34,8 @@ function ContactMe() {
       .then(
         () => {
           console.log('SUCCESS!');
-          setHiddenDiv(false)
+          setHiddenDiv(false);
+          e.preventDefault();
           reset();
           setTimeout(() => {
             setHiddenDiv(true)
