@@ -1,24 +1,57 @@
-import React, { useState } from "react";
+import React, { useState , useRef} from "react";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
+import emailjs from '@emailjs/browser';
+import {useForm} from "react-hook-form";
 function ContactMe() {
+
+  const {register,reset,handleSubmit}=useForm();
+
+  const form = useRef();
+
   const [formValues,setformValues] = useState({
-    fname:"",
-    email:"",
-    subject:"",
-    message:""
+    name:"",
+    em:"",
+    sub:"",
+    mess:""
   })
-  function handleOnChange(event) {
-    const{name,value}=event.target; 
-    setformValues((prevValue)=>{
-      return{
-        ...prevValue,
-        [name]:value
-      }
-    })
-  }
-  
+  const [hiddenDiv,setHiddenDiv]= useState(true)
+
+  async function onSubmit(data){
+    const{fname,email,subject,message}=data; 
+    
+    setformValues({
+        name :fname,
+        em:email,
+        sub:subject,
+        mess:message
+      })
+      emailjs
+      .sendForm('service_i00ptz9', 'template_h6li3e8', form.current, {
+        publicKey: 'RxPh_uTR2bt0dBeOS',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setHiddenDiv(false)
+          reset();
+          setTimeout(() => {
+            setHiddenDiv(true)
+          }, 5000);
+    },
+    (error) => {
+      console.log('FAILED...', error.text);
+    },
+  );
+    }
+    
+    
+    
+    
+    
+
+
     return(
         <section className="ftco-section contact-section ftco-no-pb" id="contact-section">
         <div className="container">
@@ -63,28 +96,29 @@ function ContactMe() {
   
           <div className="row no-gutters block-9">
             <div className="col-md-6 order-md-last d-flex">
-              <form action="#" className="bg-light p-4 p-md-5 contact-form">
+              <form  ref={form} action="#" className="bg-light p-4 p-md-5 contact-form">
                 <div className="form-group">
-                  <input name="fname" onChange={handleOnChange} type="text" className="form-control" placeholder="Your Name"/>
+                  <input {...register("fname",{required:true})}  type="text" className="form-control" placeholder="Your Name" />
                 </div>
                 <div className="form-group">
-                  <input name="email" onChange={handleOnChange} type="text" className="form-control" placeholder="Your Email"/>
+                  <input {...register("email",{required:true})} type="text" className="form-control" placeholder="Your Email" />
                 </div>
                 <div className="form-group">
-                  <input name="subject" onChange={handleOnChange} type="text" className="form-control" placeholder="Subject"/>
+                  <input {...register("subject",{required:true})}   type="text" className="form-control" placeholder="Subject" />
                 </div>
                 <div className="form-group">
-                  <textarea name="message" onChange={handleOnChange} id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
+                  <textarea {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="Message" ></textarea>
                 </div>
                 <div className="form-group">
-                  <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5"/>
+                  <input type="submit" value="Send Message" onClick={handleSubmit(onSubmit)} className="btn btn-primary py-3 px-5"/>
                 </div>
+                <div hidden={hiddenDiv}>Message sent successfully!</div>
               </form>
             
             </div>
   
             <div className="col-md-6 d-flex">
-                <div className="img" style={{}}></div>
+                <div className="img" ></div>
             </div>
           </div>
         </div>
