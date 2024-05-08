@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import {useForm} from "react-hook-form";
 function ContactMe() {
 
-  const {register,reset,handleSubmit}=useForm();
+  const {register,reset,handleSubmit,formState:{errors}}=useForm();
 
   const form = useRef();
 
@@ -17,34 +17,39 @@ function ContactMe() {
     mess:""
   })
   const [hiddenDiv,setHiddenDiv]= useState(true)
+  const [isMouseOver, setMouseOver]= useState(false)
+  function handleMouseOver() {
+    setMouseOver(true);
+  }
 
-  async function onSubmit(data,e){
+  function handleMouseOut() {
+    setMouseOver(false);
+  }
+  function onSubmit(data,e){
     const{fname,email,subject,message}=data; 
     
+    emailjs
+    .sendForm('service_i00ptz9', 'template_h6li3e8', form.current, {publicKey: 'RxPh_uTR2bt0dBeOS'})
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        setHiddenDiv(false);
+        e.preventDefault();
+        reset();
+        setTimeout(() => {
+          setHiddenDiv(true)
+        }, 3000);
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
     setformValues({
         name :fname,
         em:email,
         sub:subject,
         mess:message
       })
-      emailjs
-      .sendForm('service_i00ptz9', 'template_h6li3e8', form.current, {
-        publicKey: 'RxPh_uTR2bt0dBeOS',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          setHiddenDiv(false);
-          e.preventDefault();
-          reset();
-          setTimeout(() => {
-            setHiddenDiv(true)
-          }, 5000);
-    },
-    (error) => {
-      console.log('FAILED...', error.text);
-    },
-  );
     }
     
     
@@ -99,7 +104,10 @@ function ContactMe() {
             <div className="col-md-6 order-md-last d-flex">
               <form  ref={form} action="#" className="bg-light p-4 p-md-5 contact-form">
                 <div className="form-group">
-                  <input {...register("fname",{required:true})}  type="text" className="form-control" placeholder="Your Name" />
+                  <input {...register("fname",{required:true,minLength:{
+                    message:"this is req"
+                  }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder={errors.fname?.message} />
+                  <div>{errors.fname?.message}</div>
                 </div>
                 <div className="form-group">
                   <input {...register("email",{required:true})} type="text" className="form-control" placeholder="Your Email" />
@@ -111,9 +119,14 @@ function ContactMe() {
                   <textarea {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="Message" ></textarea>
                 </div>
                 <div className="form-group">
-                  <input type="submit" value="Send Message" onClick={handleSubmit(onSubmit)} className="btn btn-primary py-3 px-5"/>
+                  <input type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
+                  style={{ backgroundColor: isMouseOver ? "#ffa500" : "orange" }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}className="btn btn-primary py-3 px-5"/>
                 </div>
-                <div hidden={hiddenDiv}>Message sent successfully!</div>
+                <div style={{
+                  opacity: hiddenDiv ? "0" : "1",
+                  transition: "all .5s",
+                  visibility: hiddenDiv? "hidden" : "visible"}}>Message sent successfully!</div>
+                  
               </form>
             
             </div>
@@ -125,7 +138,8 @@ function ContactMe() {
         </div>
       </section>
     )
-
-}
-export default ContactMe;
-
+    
+  }
+  export default ContactMe;
+  
+  
