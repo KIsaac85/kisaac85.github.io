@@ -12,9 +12,9 @@ import {Link} from "react-scroll";
 
     return(    
 
-  <nav style={{position:"fixed"}}className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target " >
+  <nav style={{position:"fixed"}}className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target bg-dark" >
   <div className="container-fluid ">
-    <a className="navbar-brand col-xl-6" href="#">Karim</a>
+    <a className="navbar-brand " href="#">Karim</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
