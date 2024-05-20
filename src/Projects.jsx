@@ -14,14 +14,9 @@ function cards(card){
 function Projects() {
 	
 	return(
-		
-		<div>
+		<div id="projects-section" className="row">
 			{projectsData.map(cards)}
-			
-	
 		</div>
-    
-  
     )
 }
 
