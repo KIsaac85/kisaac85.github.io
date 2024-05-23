@@ -12,15 +12,18 @@ function App() {
 
   return (
 
-    <div>
-    <Heading/>
+    <div>   
+       <Heading/>
     <Home />
     <AboutMe/>
     <Resume/>
     <Skills/>
     <Projects/>
     <ContactMe/>
-   </div>
+    </div>
+
+   
+
   )
 }
 
