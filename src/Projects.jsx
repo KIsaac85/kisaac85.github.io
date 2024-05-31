@@ -3,20 +3,32 @@ import Card from "./projectCard.jsx";
 import projectsData from "./js/projectsData"
 
 function cards(card){
-	return(<Card 
+	
+	return(
+	
+		<div class="col-md-4 text-center d-flex ">
+	<Card 
 		key = {card.id}
 		picture={card.picSource}
 		description={card.description}
 		websiteLink={card.link}
-		codeLink={card.websiteCode}/>)
+		codeLink={card.websiteCode}/>
+			</div>
+			
+		)
 }
 
 function Projects() {
 	
 	return(
-		<div id="projects-section" className="row">
+		<section id="projects-section" className="ftco-section">
+		<div className="container">
+		<div className="row">
 			{projectsData.map(cards)}
 		</div>
+		</div>
+			
+		</section>
     )
 }
 
