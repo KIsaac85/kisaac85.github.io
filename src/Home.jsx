@@ -41,27 +41,26 @@ useEffect(()=>{
 },[role]);
 
   return (
-
-    <div>
-      
+  
               
-  <div id="home" style={{display:"flex",margin:"100px"}}>  
-      <div >
+  <div className="one-forth d-flex  align-items-center" id="home" >  
+      <div className='text' >
         <span className="subheading">Hello!</span>
       <h1 className="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>
-       <h2 className="mb-4" style={{width:"700px"}}>{role}</h2>
+       <h2 className="mb-4" >{role}</h2>
        <p>
          <a href="#" className="btn btn-primary py-3 px-4">Hire me</a> 
          <a href="#" className="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
        </div>
-       <div><img style={{width:"500px"}} src={image1}></img></div>
+       <div>
+        {/* <img style={{width:"500px"}} src={image1}></img> */}
+       </div>
        <div className="one-third js-fullheight order-md-last img" style={{backgroundImage:`url(${image1}`}}>
 	          		<div className="overlay"></div>
        </div>
        
-         
-	  </div>
-    </div>
+       </div>
+	 
 
   )
 }

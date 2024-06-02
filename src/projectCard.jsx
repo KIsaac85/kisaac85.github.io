@@ -6,8 +6,9 @@ import React from "react";
 
 function projectCard(props) {
     return(
-		<div >
-			<div className="card col-md-6" style={{width: "25rem"}}>
+		<div className="">
+			<div className=" card col-md-6 bg-dark" style={{width: "25rem"}}>
+			
  			 <img className="card-img-top" src={props.picture} alt="Card image cap"/>
  			 <div className="card-body">
   			  <h5 className="card-title">Card title</h5>
@@ -15,6 +16,7 @@ function projectCard(props) {
   			  <a href={`//${props.websiteLink}`} className="btn btn-primary" >Site</a>
   			  <a href={`//${props.codeLink}`} className="btn btn-primary">Code</a>
 				</div>
+				
 			</div>	  
 		</div>
     )

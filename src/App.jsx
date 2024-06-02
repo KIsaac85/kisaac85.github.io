@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import AboutMe from './Aboutme.jsx'
+import AboutMe from './AboutMe.jsx'
 import Home from "./Home.jsx"
 import Heading from './Header.jsx'
 import Resume from './Resume.jsx'
@@ -13,7 +13,7 @@ function App() {
   return (
 
     <div>   
-       <Heading/>
+      <Heading/>
     <Home />
     <AboutMe/>
     <Resume/>
