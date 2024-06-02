@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    font-family: 'poppins', sans-serif, monospace;
+    color: white;
+    justify-content: center;
+}
+#root{
+    width:80%;
+}
+.navbar-brand{
+    color: white;
+    font-weight:900;
+    font-size: x-large;
+}
+
+.nav-link {
+    color: white;
+    
+}
+.nav-link:hover, .navbar-brand:hover{
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: blueviolet;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+}
+nav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    /* position: fixed; */
+  
+}
+.navbar-collapse{
+    width: 800px;
+    justify-content: left;
+}
