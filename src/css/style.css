@@ -1,9 +1,53 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --background:rgb(0,0,0)
+}
+
 body{
-    background-color: black;
+    background-color: #000000;
     font-family: 'poppins', sans-serif, monospace;
     color: white;
+    margin: 0 ;
+    
     justify-content: center;
+   
 }
+
+nav{
+    background-color: var(--background);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+   align-items: center; 
+   
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-link,.navbar-brand{
+    text-decoration: none ;
+    color: #ffffff;
+}
+.nav-link:hover,.navbar-brand:hover{
+    color: #ffbd39;
+}
+.navbar-brand{
+    font-weight: 900;
+   
+}
+.navbar-collapse{
+    width: 50%;
+}
+    /*
 #root{
     width:80%;
 }
@@ -20,24 +64,17 @@ body{
 .nav-link:hover, .navbar-brand:hover{
     text-decoration: underline;
     color: white;
-    text-decoration-color: blueviolet;
+    text-decoration-color: #ffbd39;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    justify-content:space-between;
-}
+
 nav{
     height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    /* position: fixed; */
+    text-align: center;
+    background-color: black;
+    
   
 }
 .navbar-collapse{
-    width: 800px;
-    justify-content: left;
+    
 }
