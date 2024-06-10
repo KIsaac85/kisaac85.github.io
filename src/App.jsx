@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import AboutMe from './AboutMe.jsx'
+import AboutMe from './Aboutme.jsx'
 import Home from "./Home.jsx"
 import Heading from './Header.jsx'
 import Resume from './Resume.jsx'
