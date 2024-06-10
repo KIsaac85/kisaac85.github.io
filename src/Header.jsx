@@ -15,13 +15,13 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 <nav>  
 
    
-      <a className="navbar-brand" href="#">Karim</a>
-      <DensityMediumIcon className="navbar-icon" />
+      <a className="navbar-brand" href="#" >Karim</a>
+      <DensityMediumIcon className="navbar-icon" onClick={gotclicked} />
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className="navbar-items">
-      <ul>
+    <div className="navbar-items" >
+      <ul >
 
         <li >
           <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="nav-link " aria-current="page" href="#"><span>Home</span></Link>

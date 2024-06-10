@@ -15,15 +15,15 @@ nav{
     z-index: 999;
     display: flex;
     justify-content: space-around ;
-    gap: 20rem;;
-   align-items: center; 
-   height: 50px;
+    align-items: center; 
+    height: 50px;
 }
 
 ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    
     
 }
 .nav-link,.navbar-brand{
@@ -52,12 +52,17 @@ ul{
 .navbar-items{
     flex-basis: 50%;
 }
-   
 
+
+
+/*
 @media  (max-width:1200px) {
     .navbar-items{display: none;}
+    nav{gap: 55rem;}
 }
 @media  (min-width:1201px){
     .navbar-icon{display: none !important;}
+    nav{gap: 20rem;}
+
     
 }
