@@ -1,7 +1,14 @@
-import React, {useEffect} from "react";
+import React, {useEffect,useState} from "react";
 import {Link} from "react-scroll";
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
  function Heading() {
+
+  const [prefCol, setPrefCol] = useState("hello");
+useEffect(() => {
+   let mediaQuery = window.matchMedia("(max-width: 1200px)").matches;
+   if(mediaQuery) {setPrefCol("dark");}
+   else {setPrefCol("light");}
+})
 //   useEffect(() => {
 //     window.addEventListener('scroll', function () {
 //       var header = this.document.querySelector("header");
@@ -20,7 +27,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className="navbar-items" >
+    <div className = {`navbar-items  ${ prefCol}`} >
       <ul >
 
         <li >
