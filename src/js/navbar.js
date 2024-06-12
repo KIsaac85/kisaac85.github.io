@@ -3,7 +3,7 @@ const el = document.getElementsByTagName("ul")[0];
 const ele = document.getElementsByClassName("navbar-items")[0];
 const elIcon = document.getElementsByClassName("navbar-icon")[0];
 
-
+/*
 function gotclicked() {
     
     el.style.flexDirection="column";
