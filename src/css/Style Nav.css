@@ -17,15 +17,15 @@ nav{
     justify-content: space-around ;
     align-items: center; 
     height: 50px;
+    
 }
 
-ul{
+.navbar-items>ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    
-    
 }
+
 .nav-link,.navbar-brand{
     text-decoration: none ;
     color: var(--color);
@@ -62,15 +62,10 @@ ul{
     flex-direction: column;
     width: 50px;
 }
-
-/*
-@media  (max-width:1200px) {
-    .navbar-items{display: none;}
-    nav{gap: 55rem;}
+.nav-button-hide{
+    display: none !important;
 }
-@media  (min-width:1201px){
-    .navbar-icon{display: none !important;}
-    nav{gap: 20rem;}
-
-    
+.nav-button-show{
+    display: block !important;
 }
+

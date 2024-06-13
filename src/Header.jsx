@@ -6,36 +6,40 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
   const [classNameCSS, setClassNameCSS] = useState("");
   const [classNameULCSS, setClassNameULCSS] = useState("");
+
   const [buttonDisplay, setButtonDisplay] = useState(false);
 
-  
-
-  let mediaQuery = window.matchMedia("(max-width: 1200px)");
-  mediaQuery.addEventListener("change", function() {
-   ()=>mediaQuery.matches?setButtonDisplay(false):setButtonDisplay(true)});
   function gotclicked() {
     !isClicked?setIsClicked(true):setIsClicked(false)
-  isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
-  isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
-}
+    isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
+    isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
+  }
+
+ 
+  let mediaQuery = window.matchMedia("(max-width: 1200px)");
 
 
+  function myFunction() {mediaQuery.matches?setButtonDisplay(false):setButtonDisplay(true)};
 
 
+  mediaQuery.addEventListener("change", function() {myFunction()});
+  
+   
+   
     return(    
 
 <nav>  
 
    
       <a className="navbar-brand" href="#" >Karim</a>
-      <DensityMediumIcon className="navbar-icon" onClick={gotclicked} style={buttonDisplay?{display:"none"}:{display:"block"}}/>
+      <DensityMediumIcon className={`navbar-icon ${buttonDisplay? "nav-button-hide":"nav-button-show"}`} onClick={gotclicked} />
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className = {`navbar-items  ${ classNameCSS}`} style={!buttonDisplay?{display:"none"}:{display:"block"}}>
+    <div className = {`navbar-items  ${ classNameCSS }${!buttonDisplay? "nav-button-hide":"nav-button-show"}` } >
       <ul className={`${classNameULCSS}`} >
 
-        <li >
+        <li>
           <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="nav-link " aria-current="page" href="#"><span>Home</span></Link>
         </li>
 
