@@ -2,39 +2,25 @@ import React, {useEffect,useState} from "react";
 import {Link} from "react-scroll";
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
  function Heading() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(true);
 
   const [classNameCSS, setClassNameCSS] = useState("");
   const [classNameULCSS, setClassNameULCSS] = useState("");
   const [buttonDisplay, setButtonDisplay] = useState(false);
 
-  const[sizeChange,setSizeChange]=useState(false);
-
-  let mediaQuery = window.matchMedia("(max-width: 1200px)").matches;
   
+
+  let mediaQuery = window.matchMedia("(max-width: 1200px)");
+  mediaQuery.addEventListener("change", function() {
+   ()=>mediaQuery.matches?setButtonDisplay(false):setButtonDisplay(true)});
   function gotclicked() {
     !isClicked?setIsClicked(true):setIsClicked(false)
   isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
   isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
 }
-function myFunction() {
-  if (mediaQuery.matches) { // If media query matches
-      setButtonDisplay(false)
-  } else {
-      setButtonDisplay(true)
-  }
-}
 
-// Create a MediaQueryList object
-// var x = window.matchMedia("(max-width: 1200px)")
 
-// // Call listener function at run time
-// myFunction(x);
 
-// // Attach listener function on state changes
-// x.addEventListener ("change", function() {
-//   myFunction(x);
-// });
 
     return(    
 
@@ -42,11 +28,11 @@ function myFunction() {
 
    
       <a className="navbar-brand" href="#" >Karim</a>
-      <DensityMediumIcon className="navbar-icon" onClick={gotclicked} />
+      <DensityMediumIcon className="navbar-icon" onClick={gotclicked} style={buttonDisplay?{display:"none"}:{display:"block"}}/>
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className = {`navbar-items  ${ classNameCSS}`} >
+    <div className = {`navbar-items  ${ classNameCSS}`} style={!buttonDisplay?{display:"none"}:{display:"block"}}>
       <ul className={`${classNameULCSS}`} >
 
         <li >
