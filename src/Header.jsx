@@ -1,28 +1,34 @@
 import React, {useEffect,useState} from "react";
 import {Link} from "react-scroll";
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+
+
  function Heading() {
-  const [isClicked, setIsClicked] = useState(true);
+   useEffect(() => {checkScreenWidth()}, []);
+   let mediaQuery = window.matchMedia("(max-width: 1200px)");
 
-  const [classNameCSS, setClassNameCSS] = useState("");
-  const [classNameULCSS, setClassNameULCSS] = useState("");
+   const [isClicked, setIsClicked] = useState(false);
+   const [classNameCSS, setClassNameCSS] = useState("");
+   const [classNameULCSS, setClassNameULCSS] = useState("");
+   const  [hide,setHide]=useState("");
+   
+   
+   function gotclicked() {
+    
+     isClicked?setIsClicked(true):setIsClicked(false)
+     isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
+     isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
+     isClicked? setHide("nav-button-hide"):setHide("")
+     }
+     
+     
+     
 
-  const [buttonDisplay, setButtonDisplay] = useState(false);
-
-  function gotclicked() {
-    !isClicked?setIsClicked(true):setIsClicked(false)
-    isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
-    isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
-  }
-
- 
-  let mediaQuery = window.matchMedia("(max-width: 1200px)");
+    
+  function checkScreenWidth() {mediaQuery.matches?setHide("nav-button-hide"):setHide("")};
 
 
-  function myFunction() {mediaQuery.matches?setButtonDisplay(false):setButtonDisplay(true)};
-
-
-  mediaQuery.addEventListener("change", function() {myFunction()});
+  mediaQuery.addEventListener("change", function() {checkScreenWidth()});
   
    
    
@@ -32,33 +38,33 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
    
       <a className="navbar-brand" href="#" >Karim</a>
-      <DensityMediumIcon className={`navbar-icon ${buttonDisplay? "nav-button-hide":"nav-button-show"}`} onClick={gotclicked} />
+      <DensityMediumIcon className={`navbar-icon ${ hide}`} onClick={gotclicked} />
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className = {`navbar-items  ${ classNameCSS }${!buttonDisplay? "nav-button-hide":"nav-button-show"}` } >
+    <div className = {`navbar-items  ${classNameCSS} ${hide}` } >
       <ul className={`${classNameULCSS}`} >
 
         <li>
-          <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="nav-link " aria-current="page" href="#"><span>Home</span></Link>
+          <Link className="nav-link" to="home" spy={true} smooth={true} offset={50} duration={500}  aria-current="page" href="#"><span>Home</span></Link>
         </li>
 
         <li >
-          <Link to="about-section" spy={true} smooth={true} offset={50} duration={500} a className="nav-link" href="#"><span>About</span></Link>
+          <Link  className="nav-link" to="about-section" spy={true} smooth={true} offset={50} duration={500} a  href="#"><span>About</span></Link>
         </li>
     
         <li>
-          <Link to="resume-section" spy={true} smooth={true} offset={50} duration={500} className="nav-link" href="#" ><span>Resume</span></Link>
+          <Link className="nav-link" to="resume-section" spy={true} smooth={true} offset={50} duration={500} href="#" ><span>Resume</span></Link>
         </li>
         <li>
-          <Link to="skills-section" spy={true} smooth={true} offset={50} duration={500} className="nav-link" href="#" ><span>Skills</span></Link>
+          <Link className="nav-link" to="skills-section" spy={true} smooth={true} offset={50} duration={500} href="#" ><span>Skills</span></Link>
         </li>
         <li>
-          <Link to="projects-section" spy={true} smooth={true} offset={50} duration={500} className="nav-link" href="#" ><span>Projects</span></Link>
+          <Link className="nav-link" to="projects-section" spy={true} smooth={true} offset={50} duration={500} href="#" ><span>Projects</span></Link>
         </li>        
         
         <li>
-          <Link to="contact-section" spy={true} smooth={true} offset={50} duration={500} className="nav-link" href="#" ><span>Contact</span></Link>
+          <Link className="nav-link" to="contact-section" spy={true} smooth={true} offset={50} duration={500} href="#" ><span>Contact</span></Link>
         </li>
       </ul>
       
