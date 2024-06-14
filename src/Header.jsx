@@ -10,23 +10,31 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
    const [isClicked, setIsClicked] = useState(false);
    const [classNameCSS, setClassNameCSS] = useState("");
    const [classNameULCSS, setClassNameULCSS] = useState("");
-   const  [hide,setHide]=useState("");
+   const  [hideButton,setHideButton]=useState("");
+   const  [hideList,setHideList]=useState("");
    
    
    function gotclicked() {
     
-     isClicked?setIsClicked(true):setIsClicked(false)
-     isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("");
+     isClicked?setIsClicked(false):setIsClicked(true)
+     isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("nav-button-hide");
      isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
-     isClicked? setHide("nav-button-hide"):setHide("")
+     //isClicked? setHideButton(""):setHideButton("nav-button-hide")
+     isClicked&& setHideList("")
+      console.log(isClicked);
      }
      
      
      
 
     
-  function checkScreenWidth() {mediaQuery.matches?setHide("nav-button-hide"):setHide("")};
-
+  function checkScreenWidth() {
+    mediaQuery.matches?setHideButton(""):setHideButton("nav-button-hide")
+    mediaQuery.matches?setHideList("nav-button-hide"):setHideList("navbar-items")
+    !mediaQuery.matches&&setClassNameULCSS("")
+    !mediaQuery.matches&&setClassNameCSSg("")
+  };
+    
 
   mediaQuery.addEventListener("change", function() {checkScreenWidth()});
   
@@ -38,11 +46,11 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
    
       <a className="navbar-brand" href="#" >Karim</a>
-      <DensityMediumIcon className={`navbar-icon ${ hide}`} onClick={gotclicked} />
+      <DensityMediumIcon className={`navbar-icon ${ hideButton}`} onClick={gotclicked} />
       {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
        </button> */}
-    <div className = {`navbar-items  ${classNameCSS} ${hide}` } >
+    <div className = {`  ${classNameCSS} ${hideList}` } >
       <ul className={`${classNameULCSS}`} >
 
         <li>
