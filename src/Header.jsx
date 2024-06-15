@@ -32,7 +32,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
     mediaQuery.matches?setHideButton(""):setHideButton("nav-button-hide")
     mediaQuery.matches?setHideList("nav-button-hide"):setHideList("navbar-items")
     !mediaQuery.matches&&setClassNameULCSS("")
-    !mediaQuery.matches&&setClassNameCSSg("")
+    !mediaQuery.matches&&setClassNameCSS("")
   };
     
 

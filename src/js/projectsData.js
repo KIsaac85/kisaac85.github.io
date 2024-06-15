@@ -6,11 +6,18 @@ import API from "../images/API.png"
 import ReactJp from "../images/React.png";
 
 
-const projects = [{
-    id :1,
+const projects = [
+    {
+    id :0,
     link: "facebook.com",
     description:"hello",
     picSource: API,
+    websiteCode: "google.com"
+},
+{
+    id :1,
+    link: "facebook.com",
+    picSource: dices,
     websiteCode: "google.com"
 },
 {
@@ -19,26 +26,21 @@ const projects = [{
     picSource: REST,
     description:"hello",
     websiteCode: "google.com"
-},{
+},
+{
     id :3,
     link: "facebook.com",
     picSource: ejs,
     description:"hello",
     websiteCode: "google.com"
-},{
+},
+{
     id :4,
     link: "facebook.com",
     description:"hello",
     picSource: ReactJp,
     websiteCode: "google.com"
-},{
-    id :5,
-    link: "facebook.com",
-    picSource: dices,
-    websiteCode: "google.com"
-},
-
-
+}
 ]
 
 export default projects;

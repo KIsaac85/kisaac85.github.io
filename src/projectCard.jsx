@@ -7,7 +7,7 @@ import React from "react";
 function projectCard(props) {
     return(
 		<div className="">
-			<div className=" card col-md-6 bg-dark" style={{width: "25rem"}}>
+			<div className=" card col-md-6 bg-dark"  style={{width: "25rem"}}>
 			
  			 <img className="card-img-top" src={props.picture} alt="Card image cap"/>
  			 <div className="card-body">
