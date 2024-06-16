@@ -47,9 +47,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
    
       <a className="navbar-brand" href="#" >Karim</a>
       <DensityMediumIcon className={`navbar-icon ${ hideButton}`} onClick={gotclicked} />
-      {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-       </button> */}
+
     <div className = {`  ${classNameCSS} ${hideList}` } >
       <ul className={`${classNameULCSS}`} >
 
@@ -58,7 +56,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
         </li>
 
         <li >
-          <Link  className="nav-link" to="about-section" spy={true} smooth={true} offset={50} duration={500} a  href="#"><span>About</span></Link>
+          <Link  className="nav-link" to="about-section" spy={true} smooth={true} offset={50} duration={500}   href="#"><span>About</span></Link>
         </li>
     
         <li>
