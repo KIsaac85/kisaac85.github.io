@@ -17,7 +17,7 @@ nav{
     justify-content: space-around ;
     align-items: center; 
     height: 50px;
-    
+    gap: 20rem;
 }
 ul{
     list-style: none;
@@ -34,8 +34,9 @@ ul{
 
 .nav-link::after,.navbar-brand::after{
     content: '';
-    display: block;
-    height: 2px;
+    display:block;
+    
+    height: 0.2rem;
     background: var(--yellowColor);
     transform: scale(0,2);
     transition: transform ease-in-out 250ms;
@@ -48,33 +49,48 @@ ul{
 .navbar-brand{
     font-weight: 900;
 }
+.div-button-ul{
+    width: 5rem;
+}
 
+.div-ul{
+    width: 30rem;
+    
+}
+li{
+    display: inline-block;
+}
 /*horizontal navbar*/
 .navbar-items>ul{
     display: flex;
     justify-content: space-between;
+    
+    
 }
 .navbar-items{
     flex-basis: 50%;
+    
 }
 
 /*column navbar*/
 
 .nav-button-hide{
     display: none !important ;
+    
 }
-.nav-button-show{
-    display: block !important;
-}
+
 
 .navbar-items-columns{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
 }
 
 .ulCol{
-    flex-direction: column;
-    width: 50px;
+    display: block;
+    padding-left: 0;
+    margin: 5rem 0rem 0rem 0rem;
 }
+
 
 

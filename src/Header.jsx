@@ -7,11 +7,12 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
    useEffect(() => {checkScreenWidth()}, []);
    let mediaQuery = window.matchMedia("(max-width: 1200px)");
 
-   const [isClicked, setIsClicked] = useState(false);
+   const [isClicked, setIsClicked] = useState(true);
    const [classNameCSS, setClassNameCSS] = useState("");
    const [classNameULCSS, setClassNameULCSS] = useState("");
    const  [hideButton,setHideButton]=useState("");
    const  [hideList,setHideList]=useState("");
+   const [divWidth,setDivWidth]=useState("");
    
    
    function gotclicked() {
@@ -19,9 +20,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
      isClicked?setIsClicked(false):setIsClicked(true)
      isClicked? setClassNameCSS("navbar-items-columns"):setClassNameCSS("nav-button-hide");
      isClicked? setClassNameULCSS("ulCol"):setClassNameULCSS("");
-     //isClicked? setHideButton(""):setHideButton("nav-button-hide")
      isClicked&& setHideList("")
-      console.log(isClicked);
      }
      
      
@@ -31,6 +30,7 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
   function checkScreenWidth() {
     mediaQuery.matches?setHideButton(""):setHideButton("nav-button-hide")
     mediaQuery.matches?setHideList("nav-button-hide"):setHideList("navbar-items")
+    !mediaQuery.matches?setDivWidth("div-ul"):setDivWidth("div-button-ul")
     !mediaQuery.matches&&setClassNameULCSS("")
     !mediaQuery.matches&&setClassNameCSS("")
   };
@@ -43,16 +43,17 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
     return(    
 
 <nav>  
-
+      <div><a className="navbar-brand" href="#" >Karim</a>
+      </div>
    
-      <a className="navbar-brand" href="#" >Karim</a>
-      <DensityMediumIcon className={`navbar-icon ${ hideButton}`} onClick={gotclicked} />
+      <div className={`${divWidth}`} >
+      <DensityMediumIcon className={`navbar-icon ${ hideButton}`} onClick={gotclicked}  />
+      <div className = {`${classNameCSS} ${hideList}` } >
 
-    <div className = {`  ${classNameCSS} ${hideList}` } >
-      <ul className={`${classNameULCSS}`} >
+      <ul  className={`${classNameULCSS}`} >
 
         <li>
-          <Link className="nav-link" to="home" spy={true} smooth={true} offset={50} duration={500}  aria-current="page" href="#"><span>Home</span></Link>
+          <Link  className="nav-link" to="home" spy={true} smooth={true} offset={50} duration={500}  aria-current="page" href="#"><span>Home</span></Link>
         </li>
 
         <li >
@@ -75,6 +76,8 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
       </ul>
       
     </div>
+    </div>
+      
   
   
 </nav>
