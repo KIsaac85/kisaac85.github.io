@@ -1,0 +1,11 @@
+#home{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 10.5rem;
+    padding-top:  10rem;
+    
+}
+.text,#home{
+    width: 75rem;
+    height: 30rem;
+}

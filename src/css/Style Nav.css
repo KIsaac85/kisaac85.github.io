@@ -13,7 +13,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 999;
-    display: flex;
+    display: flex ;
     justify-content: space-around ;
     align-items: center; 
     height: 50px;
@@ -35,7 +35,6 @@ ul{
 .nav-link::after,.navbar-brand::after{
     content: '';
     display:block;
-    
     height: 0.2rem;
     background: var(--yellowColor);
     transform: scale(0,2);

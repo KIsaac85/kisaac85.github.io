@@ -43,14 +43,14 @@ useEffect(()=>{
   return (
   
               
-  <div className="one-forth d-flex  align-items-center" id="home" style={{paddingTop:"50px"}}>  
+  <div className="" id="home" >  
       <div className='text' >
         <span className="subheading">Hello!</span>
       <h1 className="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>
        <h2 className="mb-4" >{role}</h2>
        <p>
-         <a href="#" className="btn btn-primary py-3 px-4">Hire me</a> 
-         <a href="#" className="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+         <a href="#" className="">Hire me</a> 
+         <a href="#" className="">My works</a></p>
        </div>
        <div>
         {/* <img style={{width:"500px"}} src={image1}></img> */}
