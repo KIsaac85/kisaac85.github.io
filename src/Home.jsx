@@ -1,5 +1,7 @@
 import React, { useState , useEffect} from 'react'
 import image1 from "./images/2.jpg"
+import { Stack} from '@mui/material';
+import  StyledButton  from './js/ButtonStyle';
 
 
 function Home() {
@@ -17,7 +19,9 @@ function Home() {
 
   //   }
     
+ 
 
+  
 
   
 useEffect(()=>{
@@ -45,12 +49,18 @@ useEffect(()=>{
               
   <div className="" id="home" >  
       <div className='text' >
-        <span className="subheading">Hello!</span>
-      <h1 className="mb-4 mt-3">I'm <span>Karim Isaac</span></h1>
-       <h2 className="mb-4" >{role}</h2>
-       <p>
-         <a href="#" className="">Hire me</a> 
-         <a href="#" className="">My works</a></p>
+        <span className="">Hello!</span>
+      <h1 className="">I'm <span>Karim Isaac</span></h1>
+       <h2 className="" >{role}</h2>
+       
+        <Stack spacing={2} direction={'row'}>
+        
+       <StyledButton variant="contained">Hire Me</StyledButton>
+       <StyledButton variant="contained">My works</StyledButton>
+
+       
+       </Stack>
+         
        </div>
        <div>
         {/* <img style={{width:"500px"}} src={image1}></img> */}
