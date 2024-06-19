@@ -9,3 +9,17 @@
     width: 75rem;
     height: 30rem;
 }
+
+@keyframes fade-down {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.fade{
+    animation: fade-down 5s infinite alternate;
+}

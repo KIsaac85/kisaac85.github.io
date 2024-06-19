@@ -5,7 +5,8 @@ import  StyledButton  from './js/ButtonStyle';
 
 
 function Home() {
-  const [role, setRole] = useState("A Freelance Full Stack Web Developer")
+  const [role, setRole] = useState("A Freelance Full Stack Web Developer");
+  const [className, setClassName] = useState("fade");
 
 
     const inter = setInterval(()=>{
@@ -14,11 +15,14 @@ function Home() {
 
 
  function changeHome() {
-  role ==="A Freelance Full Stack Web Developer"?setRole("Bim App Dev"):setRole("A Freelance Full Stack Web Developer");
-  clearInterval(inter);
+   role ==="A Freelance Full Stack Web Developer"?setRole("Bim App Dev"):setRole("A Freelance Full Stack Web Developer");
+   
+   clearInterval(inter);
  };
 
-  
+ useEffect(()=>{
+  className&&setClassName("fade")
+ },[role])
 
   return (
   
@@ -27,7 +31,7 @@ function Home() {
       <div className='text' >
         <span className="">Hello!</span>
       <h1 className="">I'm <span>Karim Isaac</span></h1>
-       <h2 className="" >{role}</h2>
+       <h2 className={`${className}`}>{role}</h2>
        
       <Stack spacing={2} direction={'row'}>
        <StyledButton variant="contained">Hire Me</StyledButton>
