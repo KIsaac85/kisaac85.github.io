@@ -7,42 +7,18 @@ import  StyledButton  from './js/ButtonStyle';
 function Home() {
   const [role, setRole] = useState("A Freelance Full Stack Web Developer")
 
-  // const interval = setInterval(() => {
-  //   role =="A Freelance Full Stack Web Developer"? 
-  //     setRole("Bim App Dev") 
-    
-  //   :setRole("A Freelance Full Stack Web Developer")},5000)
-  // // console.log(document.visibilityState);
 
-  //    if (document.visibilityState == 'hidden') {
-  //     clearInterval(interval);
+    const inter = setInterval(()=>{
+      changeHome()
+    },5000)
 
-  //   }
-    
- 
+
+ function changeHome() {
+  role ==="A Freelance Full Stack Web Developer"?setRole("Bim App Dev"):setRole("A Freelance Full Stack Web Developer");
+  clearInterval(inter);
+ };
 
   
-
-  
-useEffect(()=>{
-  //Implementing the setInterval method
-  const interval = setInterval(() => {
-    if ((document.visibilityState === 'visible')) {
-      role ==="A Freelance Full Stack Web Developer"?
-      setRole("Bim App Dev") 
-
-    : setRole("A Freelance Full Stack Web Developer")
-
-    }
-    
-     else if (document.visibilityState === 'hidden') 
-      clearInterval(interval);
-    
-    
-}, 5000);
-
-
-},[role]);
 
   return (
   
@@ -53,13 +29,10 @@ useEffect(()=>{
       <h1 className="">I'm <span>Karim Isaac</span></h1>
        <h2 className="" >{role}</h2>
        
-        <Stack spacing={2} direction={'row'}>
-        
+      <Stack spacing={2} direction={'row'}>
        <StyledButton variant="contained">Hire Me</StyledButton>
        <StyledButton variant="contained">My works</StyledButton>
-
-       
-       </Stack>
+      </Stack>
          
        </div>
        <div>
