@@ -12,14 +12,14 @@
 
 @keyframes fade-down {
     0%{
-        opacity: 1;
+        opacity: 0;
     }
     100%{
-        opacity: 0;
+        opacity: 1;
     }
     
 }
 
 .fade{
-    animation: fade-down 5s infinite alternate;
+    animation: fade-down 2.5s infinite alternate;
 }

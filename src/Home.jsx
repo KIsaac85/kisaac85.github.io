@@ -5,7 +5,7 @@ import  StyledButton  from './js/ButtonStyle';
 
 
 function Home() {
-  const [role, setRole] = useState("A Freelance Full Stack Web Developer");
+  const [role, setRole] = useState("Text A");
   const [className, setClassName] = useState("fade");
 
 
@@ -21,7 +21,7 @@ function Home() {
  };
 
  useEffect(()=>{
-  className&&setClassName("fade")
+  //className&&setClassName("fade")
  },[role])
 
   return (

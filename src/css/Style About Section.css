@@ -1,0 +1,45 @@
+#about-section{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 10.5rem;
+    padding-top:  10rem;
+    width: 75rem;
+    height: 30rem;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+}
+.About-List{
+    display: grid;
+    
+    padding-left: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+.Image-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.About-Container{
+    width: 50%;
+    position:relative
+
+}
+.About-Shadow{
+    z-index: -1;
+    position:absolute;
+    top:-2rem; 
+    left:-1rem; 
+     color:rgb(255,255,255,0.1);
+}
+
+.About-Me{
+font-weight: 700;
+}
