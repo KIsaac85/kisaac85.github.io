@@ -5,14 +5,12 @@
     padding-top:  10rem;
     width: 75rem;
     height: 30rem;
-    
 }
 
 
 .container{
     display: flex;
     flex-direction: row;
-    
     width: 100%;
 }
 .About-List{
@@ -28,7 +26,8 @@
     justify-content: center;
 }
 .About-Container{
-    width: 50%;
+    
+    
     position:relative
 
 }
@@ -37,7 +36,7 @@
     position:absolute;
     top:-2rem; 
     left:-1rem; 
-     color:rgb(255,255,255,0.1);
+     color:var(--greyContainer);
 }
 
 .About-Me{
