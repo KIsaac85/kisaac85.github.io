@@ -1,4 +1,5 @@
 import React from "react";
+import  StyledButton  from './js/ButtonStyle';
 
 function Resume() {
     return(
@@ -34,7 +35,8 @@ function Resume() {
 
     		<div className="">
     			<div className="">
-    				<p><a href="#" className="">Download CV</a></p>
+				<StyledButton variant="contained">Download CV</StyledButton>
+    				
     			</div>
     		</div>
     	</div>
