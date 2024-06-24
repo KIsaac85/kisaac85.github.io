@@ -12,16 +12,11 @@
     justify-content: center;
 }
 
-.Container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+
 
 .Degrees-Resume{
-    display: grid;
-    
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Degree-Container{

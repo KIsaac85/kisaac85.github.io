@@ -4,11 +4,11 @@ import  StyledButton  from './js/ButtonStyle';
 function Resume() {
     return(
     <section className="" id="resume-section">
-    	<div className="Container">
+    	<div className="main-container">
     		<div className="ٌHeader-Resume About-Container">
           
-          	<h1 className="About-Shadow">Resume</h1>
-            <h2 className="">Resume</h2>
+          	<h1 className="main-title-shadow Header-Resume">Resume</h1>
+            <h2 className="Header-Resume main-title main-font-title">Resume</h2>
             <p>Better late than never.</p>
           
         </div>
@@ -33,12 +33,10 @@ function Resume() {
     			</div>
     		</div>
 
-    		<div className="">
-    			<div className="">
+    		<div className="Header-Resume">
 				<StyledButton variant="contained">Download CV</StyledButton>
-    				
-    			</div>
-    		</div>
+    				</div>
+    		
     	</div>
     </section>)
 }

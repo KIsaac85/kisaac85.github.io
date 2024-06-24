@@ -11,6 +11,8 @@ body{
     font-family: 'poppins', sans-serif, monospace;
     color: var(--color);
     margin: 0 ;
+    display: flex;
+    justify-content: center;
     
 }
 div>span,h1>span{
@@ -21,9 +23,41 @@ h1{
     font-size: 50px;
     font-weight: 800;
 }
-.yellow-button{
-    background-color: var(--yellowColor);
-}
-.greyText{
+
+.main-grey-text{
     color: rgb(153,153,153);
+}
+
+.main-font-title {
+font-size: 40px;
+font-weight: 700;
+}
+
+.main-title-shadow{
+    z-index: -1;
+    position:absolute;
+    top: 1.5rem; 
+    left:-1rem; 
+     color:var(--greyContainer);
+}
+
+.main-title{
+font-weight: 700;
+}
+
+.main-container-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main-container{
+    position:relative;
+  
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
