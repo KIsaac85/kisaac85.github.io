@@ -6,25 +6,27 @@
     width: 75rem;
     height: 30rem;
 }
-.Header-Resume{
+.resume-middle{
     width: 100%;
+    height: 10rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
 }
 
 
 
-.Degrees-Resume{
+.resume-degrees{
     display: flex;
     justify-content: space-between;
 }
 
-.Degree-Container{
+.resume-degree-container{
     width: 30rem;
    height: 20rem;
     background-color: var(--greyContainer);
 }
-.date{
+.resume-date{
     font-size: 26px;
     font-weight: 800;
 }
