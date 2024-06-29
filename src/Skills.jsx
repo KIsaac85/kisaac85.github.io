@@ -11,10 +11,10 @@ function Skills() {
 			</div>
 			<div>
 				
-            <h2 className="main-title">My Skills</h2>
+            <h2 className="resume-middle main-title main-font-title">My Skills</h2>
 			</div>
 			<div>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p className="resume-middle">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
        
 				<div className="">
