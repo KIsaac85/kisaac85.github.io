@@ -46,7 +46,8 @@ ul{
 
 
 .navbar-brand{
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 20px;
 }
 .div-button-ul{
     width: 5rem;
