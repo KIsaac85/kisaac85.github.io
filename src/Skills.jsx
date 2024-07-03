@@ -1,4 +1,6 @@
 import React from "react";
+import skillsImage from "./images/skills.jpg"
+
 
 function Skills() {
     return(
@@ -13,10 +15,9 @@ function Skills() {
 				
             <h2 className="resume-middle main-title main-font-title">My Skills</h2>
 			</div>
-			<div>
-            <p className="resume-middle">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-       
+		  
+		  <div style={{justifyContent:"center", display:"flex"}}><img className="" src={skillsImage} style={{width:"50rem"}}></img></div>
+       {/* 
 				<div className="">
 					
 							<h3>C#</h3>
@@ -80,9 +81,11 @@ function Skills() {
 							    <span>80%</span>
 							  
 							</div>
+							
 						</div>
 					</div>
 				</div>
+				 */}
 			</div>
 		</section>
     )
