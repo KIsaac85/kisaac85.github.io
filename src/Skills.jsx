@@ -1,5 +1,5 @@
 import React from "react";
-import skillsImage from "./images/skills.jpg"
+import skillsImage from "./images/skills.png"
 
 
 function Skills() {
