@@ -1,18 +1,19 @@
-import bootstrap from "../images/bootstrap-icons.png"
+import LocalBarIcon from '@mui/icons-material/LocalBar';
 import dices from "../images/dices.jpg"
 import ejs from "../images/ejs.jpeg"
 import REST from "../images/REST-API.png"
-import API from "../images/API.png"
+import barTender from "../images/liquor_32dp_5F6368.png"
 import ReactJp from "../images/React.png";
 
 
 const projects = [
     {
     id :0,
-    link: "facebook.com",
-    description:"hello",
-    picSource: API,
-    websiteCode: "google.com"
+    link: "github.com/KIsaac85/The-bartender",
+    title:"The Bartender",
+    description:"Website that uses Axios to contact another API DB",
+    picSource: barTender,
+    websiteCode: "github.com/KIsaac85/The-bartender"
 },
 {
     id :1,
