@@ -18,7 +18,7 @@ function projectCard(props) {
 	  	style={{height: 0,
 			paddingTop: '56.25%', // 16:9,
 			margin:'30'}}
-        sx={{ height: 140,  }}
+        sx={{   width:160}}
         image={props.picture}
         title={props.title}
       />
