@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import StyledButton from "./js/ButtonStyle";
 
 
 
@@ -13,11 +14,11 @@ function projectCard(props) {
     return(
 
 
-		<Card sx={{ maxWidth: 345}}>
+		<Card id={{card}} style={{maxWidth: 345, display:"flex", flexDirection:"column", alignItems:"center"}} >
       <CardMedia
 	  	style={{height: 0,
 			paddingTop: '56.25%', // 16:9,
-			margin:'30'}}
+			margin:'100'}}
         sx={{   width:160}}
         image={props.picture}
         title={props.title}
@@ -31,7 +32,7 @@ function projectCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={`//${props.websiteLink}`}>Site</Button>
+        <Button style={{color:"black"}}size="small" href={`//${props.websiteLink}`}>Site</Button>
         <Button size="small" href={`//${props.websiteLink}`}>Code</Button>
       </CardActions>
     </Card>
