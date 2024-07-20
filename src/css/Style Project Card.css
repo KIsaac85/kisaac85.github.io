@@ -1,6 +1,5 @@
-#card{
-    
-       max-width: 345;
+#cardStyle {
+        max-width: 345px;
         display:flex;
         flex-direction: column; 
         align-items:center;

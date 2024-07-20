@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import StyledButton from "./js/ButtonStyle";
+
 
 
 
@@ -14,12 +14,11 @@ function projectCard(props) {
     return(
 
 
-		<Card id={{card}} style={{maxWidth: 345, display:"flex", flexDirection:"column", alignItems:"center"}} >
+		<Card id="cardStyle">
       <CardMedia
-	  	style={{height: 0,
-			paddingTop: '56.25%', // 16:9,
-			margin:'100'}}
-        sx={{   width:160}}
+	  	style={{height: 0, paddingTop: '56.25%', // 16:9,
+        margin:'100'}}
+        sx={{width:160}}
         image={props.picture}
         title={props.title}
       />
