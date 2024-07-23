@@ -1,9 +1,8 @@
-import LocalBarIcon from '@mui/icons-material/LocalBar';
-import dices from "../images/dices.jpg"
-import ejs from "../images/ejs.jpeg"
-import REST from "../images/REST-API.png"
+
+
 import barTender from "../images/liquor_32dp_5F6368.png"
-import ReactJp from "../images/React.png";
+import note from "../images/description_100dp_5F6368.png"
+import RevitAPI from "../images/Revit API.png";
 
 
 const projects = [
@@ -17,30 +16,19 @@ const projects = [
 },
 {
     id :1,
-    link: "facebook.com",
-    picSource: dices,
-    websiteCode: "google.com"
+    link: "github.com/KIsaac85/Your-Block-Note",
+    description:"Website illustrates the backend server using Express",
+    title: "Your Block Note",
+    picSource: note,
+    websiteCode: "github.com/KIsaac85/Your-Block-Note"
 },
 {
     id :2,
-    link: "facebook.com",
-    picSource: REST,
-    description:"hello",
-    websiteCode: "google.com"
-},
-{
-    id :3,
-    link: "facebook.com",
-    picSource: ejs,
-    description:"hello",
-    websiteCode: "google.com"
-},
-{
-    id :4,
-    link: "facebook.com",
-    description:"hello",
-    picSource: ReactJp,
-    websiteCode: "google.com"
+    link: "github.com/KIsaac85",
+    description:"Plugins for Revit API using C#",
+    title: "ٌRevit API",
+    picSource:RevitAPI,
+    websiteCode: "youtube.com/channel/UChSy8rsJGI6V2lKz9MPcPcw"
 }
 ]
 

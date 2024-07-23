@@ -1,6 +1,24 @@
 #cardStyle {
-        max-width: 345px;
+        width: 345px;
         display:flex;
         flex-direction: column; 
         align-items:center;
+}
+
+#cardMediaStyle{
+        height: 0px; 
+        padding-top: 56.25%; 
+        margin: 10px;
+        width:200px;
+}
+
+.blackButton {
+        color: black;  
+}
+
+#divContainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:30px;
 }

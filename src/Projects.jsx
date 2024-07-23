@@ -6,7 +6,7 @@ function cards(card){
 	
 	return(
 	
-		<div className="" key = {card.id}>
+		<div id="divContainer" key = {card.id} >
 	<Card 
 		title={card.title}
 		picture={card.picSource}
