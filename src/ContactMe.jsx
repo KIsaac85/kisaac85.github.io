@@ -67,32 +67,32 @@ function ContactMe() {
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             
-            <div className="">
-                <div className="">
+            <div className="" style={{display:"flex", flexDirection:"column", }}>
+              
                     <div className="">
                         <HomeIcon/>
                     </div>
                     <h3 className="">Address</h3>
                   <p>198 West 21th Street, Suite 721 New York NY 10016</p>
                 </div>
-            </div>
-            <div className="col-md-6 col-lg-4 d-flex ">
-                <div className="align-self-stretch box p-4 text-center">
-                    <div className="icon d-flex align-items-center justify-content-center">
+            
+          
+                <div className="">
+                    <div className="">
                         <LocalPhoneIcon/>
                     </div>
                     <h3 className="mb-4">Contact Number</h3>
                   <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
-                </div>
+                
             </div>
-            <div className="col-md-6 col-lg-4 d-flex ">
-                <div className="align-self-stretch box p-4 text-center">
-                    <div className="icon d-flex align-items-center justify-content-center">
+            
+                <div className="">
+                    <div className="">
                     <EmailIcon fontSize="medium" style={{color:"yellow"}}/>
                     </div>
                     <h3 className="mb-4">Email Address</h3>
                   <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                </div>
+                
             </div>
           
           </div>
