@@ -59,23 +59,20 @@ function ContactMe() {
 
 
     return(
-        <section className="ftco-section contact-section ftco-no-pb" id="contact-section">
-        <div className="container">
-            <div className="row justify-content-center mb-5 pb-3">
-            <div className="col-md-7 heading-section text-center ">
-              <h1 className="big big-2">Contact</h1>
-              <h2 className="mb-4">Contact Me</h2>
+        <section className="" id="contact-section">
+        <div className="">
+            
+            <div className="main-container">
+              <h1 className="resume-middle main-title-shadow">Contact</h1>
+              <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-            </div>
-          </div>
-  
-          <div className="row d-flex contact-info mb-5">
-            <div className="col-md-6 col-lg-4 d-flex ">
-                <div className="align-self-stretch box p-4 text-center">
-                    <div className="icon d-flex align-items-center justify-content-center">
+            
+            <div className="">
+                <div className="">
+                    <div className="">
                         <HomeIcon/>
                     </div>
-                    <h3 className="mb-4">Address</h3>
+                    <h3 className="">Address</h3>
                   <p>198 West 21th Street, Suite 721 New York NY 10016</p>
                 </div>
             </div>
