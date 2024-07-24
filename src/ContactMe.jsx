@@ -65,36 +65,33 @@ function ContactMe() {
             <div className="main-container">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-            
-            <div className="" style={{display:"flex", flexDirection:"column", }}>
-              
-                    <div className="">
-                        <HomeIcon/>
-                    </div>
-                    <h3 className="">Address</h3>
-                  <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+              <p className="resume-middle">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <div className="" style={{display:"flex",flexDirection:"row", justifyContent:"space-around"}}>
+            <div style={{width:200, display:"flex", flexDirection:"column", alignItems:"center"}}>
+              <div 
+              style={{backgroundColor:"grey"
+              ,borderRadius:50, width:100,height:100
+              , textAlign:"center" , margin:"auto"}}>
+                <HomeIcon/>
                 </div>
-            
-          
-                <div className="">
-                    <div className="">
-                        <LocalPhoneIcon/>
-                    </div>
-                    <h3 className="mb-4">Contact Number</h3>
-                  <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
-                
+              
+              <h3 className="">Address</h3>
+              <p>16 Abou Bakr elseddik street Dokki</p>
             </div>
             
-                <div className="">
-                    <div className="">
-                    <EmailIcon fontSize="medium" style={{color:"yellow"}}/>
-                    </div>
-                    <h3 className="mb-4">Email Address</h3>
-                  <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                
-            </div>
           
+            <div className="">
+              <LocalPhoneIcon/>
+              <h3 className="mb-4">Contact Number</h3>
+              <p><a href="tel://+201224033791">+201224033791</a></p>
+            </div>
+
+            <div className="">
+              <EmailIcon fontSize="medium" style={{color:"yellow"}}/>
+              <h3 className="mb-4">Email Address</h3>
+              <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            </div>
+            </div>
           </div>
   
           <div className="row no-gutters block-9">
