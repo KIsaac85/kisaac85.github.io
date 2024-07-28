@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import emailjs from '@emailjs/browser';
 import {useForm} from "react-hook-form";
 import image1 from "./images/2.jpg"
+import  StyledButton  from './js/ButtonStyle';
 
 
 function ContactMe() {
@@ -63,6 +64,7 @@ function ContactMe() {
 
     return(
         <section className="" id="contact-section">
+      
         <div className="">
             
             <div className="main-container">
@@ -100,7 +102,7 @@ function ContactMe() {
           <div className="" style={{display:"flex", flexDirection:"row"}}>
           <div className="img" ><img src={image1}></img></div>
             <div className="" style={{width:800}}>
-              <form style={{margin:50}} ref={form} action="#" className="">
+              <form style={{padding:50, backgroundColor:"white",height:860, border:""}} ref={form} action="#" className="">
                 <div className="form-group" >
                   <input style={{width:600, margin:50, height:50}} {...register("fname",{required:true,minLength:{
                     message:"this is req"
@@ -117,8 +119,8 @@ function ContactMe() {
                   <textarea style={{width:600, margin:50, height:150 }} {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="Message" ></textarea>
                 </div>
                 <div className="form-group">
-                  <input  type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
-                  style={{ margin:50, backgroundColor: isMouseOver ? "yellow" : "orange" }} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}className="btn btn-primary py-3 px-5"/>
+                  <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
+                   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="">Send Message</StyledButton>
                 </div>
                 <div style={{
                   
