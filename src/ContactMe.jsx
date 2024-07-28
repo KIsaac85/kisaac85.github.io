@@ -65,7 +65,7 @@ function ContactMe() {
     return(
         <section className="" id="contact-section">
       
-        <div className="">
+        <div className="" >
             
             <div className="main-container">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
@@ -100,13 +100,13 @@ function ContactMe() {
           </div>
   
           <div className="" style={{display:"flex", flexDirection:"row"}}>
-          <div className="img" ><img src={image1}></img></div>
+          <div className="img" style={{width:450 }}><img src={image1}></img></div>
             <div className="" style={{width:800}}>
-              <form style={{padding:50, backgroundColor:"white",height:860, border:""}} ref={form} action="#" className="">
+              <form style={{padding:50, backgroundColor:"lightgrey",height:860, border:""}} ref={form} action="#" className="">
                 <div className="form-group" >
-                  <input style={{width:600, margin:50, height:50}} {...register("fname",{required:true,minLength:{
+                  <input style={{width:600, margin:50, height:50, borderRadius:5}} {...register("fname",{required:true,minLength:{
                     message:"this is req"
-                  }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder={errors.fname?.message} />
+                  }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder={"Your Name"} />
                   <div>{errors.fname?.message}</div>
                 </div>
                 <div className="form-group">
