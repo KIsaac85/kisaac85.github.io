@@ -4,6 +4,7 @@
     width:100px; 
     height:100px;
     text-align:center;
+    
 }
 
 #iconsContainer{
@@ -20,10 +21,40 @@
 }
 
 .imageIcon{
-    transform: translateY(40px);
+    transform: translateY(35px);
     color: var(--yellowColor);
 }
 
 #textCentered{
     text-align: center;
+}
+
+#imgFormContainer{
+    display:flex;
+    flex-direction:row;
+    
+    
+}
+
+#formStyle{
+    
+     background-color: var(--lightGrey);
+    
+}
+
+img#contactImage{
+    width:  502.4px;
+    height: 720px;
+}
+
+.form-group > input, textarea{
+    width:600px;
+    margin:41.5px;
+    height:50px;
+    border-radius:5px;
+    font-family: 'poppins', sans-serif, monospace;
+    font-size: 15px;
+}
+textarea{
+    height:150px;
 }
