@@ -12,7 +12,6 @@ function Skills() {
             <h2 className="resume-middle main-title main-font-title">My Skills</h2>
 			</div>
 			<div>
-				
 			</div>
 		  
 		  <div style={{justifyContent:"center", display:"flex"}}><img className="" src={skillsImage} style={{width:"50rem"}}></img></div>

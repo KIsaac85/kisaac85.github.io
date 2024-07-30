@@ -1,3 +1,7 @@
+#contact-section{
+    padding-top: 20rem;
+}
+
 .imageContainer{
     background-color: var(--greyContainer);
     border-radius: 50px; 
@@ -32,8 +36,8 @@
 #imgFormContainer{
     display:flex;
     flex-direction:row;
-    
-    
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 #formStyle{

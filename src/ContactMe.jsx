@@ -63,14 +63,10 @@ function ContactMe() {
 
 
     return(
-        <section className="" id="contact-section">
-      
-        <div className="" >
-            
+        <section id="contact-section">
             <div className="main-container">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
-              <p className="resume-middle">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             <div id="iconsContainer">
             <div className="iconContainer">
               <div className="imageContainer">
@@ -101,7 +97,7 @@ function ContactMe() {
   
           <div id="imgFormContainer" >
           <img id="contactImage" src={image1}></img>
-            <div className="" style={{width:800}}>
+            
               <form id="formStyle" style={{}} ref={form} action="#" className="">
                 <div className="form-group" >
                   <input  {...register("fname",{required:true,minLength:{
@@ -129,10 +125,10 @@ function ContactMe() {
                   
               </form>
             
-            </div>
+            
 
           </div>
-        </div>
+        
       </section>
     )
     

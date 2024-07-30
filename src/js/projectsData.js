@@ -1,6 +1,6 @@
 
 
-import barTender from "../images/liquor_32dp_5F6368.png"
+import barTender from "../images/liquor_100dp_5F6368.png"
 import note from "../images/description_100dp_5F6368.png"
 import RevitAPI from "../images/Revit API.png";
 
