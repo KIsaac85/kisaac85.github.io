@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import AboutMe from './Aboutme.jsx'
 import Home from "./Home.jsx"
 import Heading from './Header.jsx'
@@ -11,7 +11,7 @@ function App() {
  
 
   return (
-<div>
+<div id="main-div">
     <Heading/>
     <Home />
     <AboutMe/>

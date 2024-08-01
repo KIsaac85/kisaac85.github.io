@@ -1,12 +1,11 @@
 #home{
     display: flex;
     justify-content:flex-start;
-    margin-left: 5.25rem;
     padding-top:  10rem;
     
 }
 .text,#home{
-    width: 75rem;
+    width: 80rem;
     height: 30rem;
 }
 

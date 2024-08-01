@@ -1,9 +1,9 @@
 #resume-section{
     display: flex;
     justify-content:flex-start;
-    margin-left: 4rem;
+    
     padding-top:  10rem;
-    width: 75rem;
+    width: 80rem;
     height: 30rem;
 }
 .resume-middle{

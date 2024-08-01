@@ -8,6 +8,9 @@
     --lightGrey : rgb(248, 249, 250);
 }
 
+#main-div{
+    width: 80rem;
+}
 
 .main-flex-column{
     display: flex;
