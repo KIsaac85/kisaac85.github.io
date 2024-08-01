@@ -32,6 +32,7 @@ div>span,h1>span{
     color: var(--yellowColor);
     
 }
+
 h1{
     font-size: 50px;
     font-weight: 800;
@@ -58,20 +59,12 @@ font-weight: 700;
 font-weight: 700;
 }
 
-.main-container-flex{
-    display: flex;
-    flex-direction: row;
+.main-whole-width{
     width: 100%;
 }
 
-.main-container{
-    
-    position:relative;
-  
-}
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+
+.main-relative-position{
+    position: relative;
 }

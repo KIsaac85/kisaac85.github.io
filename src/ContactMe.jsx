@@ -64,7 +64,7 @@ function ContactMe() {
 
     return(
         <section id="contact-section">
-            <div className="main-container">
+            <div className="main-flex-column main-whole-width main-relative-position">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
             <div id="iconsContainer">

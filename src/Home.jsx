@@ -20,17 +20,15 @@ function Home() {
    clearInterval(inter);
  };
 
- useEffect(()=>{
-  //className&&setClassName("fade")
- },[role])
+ useEffect(()=>{},[role])
 
   return (
   
               
-  <div className="" id="home" >  
-      <div className='text' >
-        <span className="">Hello!</span>
-      <h1 className="">I'm <span>Karim Isaac</span></h1>
+  <div  id="home">  
+      <div>
+        <span>Hello!</span>
+      <h1>I'm <span>Karim Isaac</span></h1>
        <h2 className={`${className}`}>{role}</h2>
        
       <Stack spacing={2} direction={'row'}>
@@ -39,11 +37,9 @@ function Home() {
       </Stack>
          
        </div>
-       <div>
-        {/* <img style={{width:"500px"}} src={image1}></img> */}
-       </div>
-       <div className="one-third js-fullheight order-md-last img" style={{backgroundImage:`url(${image1}`}}>
-	          		<div className="overlay"></div>
+      
+       <div style={{backgroundImage:`url(${image1}`}}>
+	          		
        </div>
        
        </div>

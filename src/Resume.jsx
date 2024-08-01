@@ -3,8 +3,8 @@ import  StyledButton  from './js/ButtonStyle';
 
 function Resume() {
     return(
-    <section className="" id="resume-section">
-    	<div className="main-container">
+    <section id="resume-section">
+    	<div className="main-flex-column main-whole-width main-relative-position">
     		<div className="ٌresume-middle">
           
           	<h1 className="main-title-shadow resume-middle">Resume</h1>
