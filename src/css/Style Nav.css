@@ -1,17 +1,8 @@
 
-
-:root{
-    --background:rgb(0,0,0);
-    --color: rgb(251,251,251);
-    --yellowColor:rgb(255, 189, 57);
-}
-
-
-
 nav{
-    background-color: var(--background);
+    background-color: var(--blackColor);
     position: fixed;
-    width: 76%;
+    width: 1200px;
     z-index: 999;
     display: flex ;
     justify-content: space-around ;
