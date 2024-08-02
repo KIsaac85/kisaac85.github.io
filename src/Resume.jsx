@@ -1,5 +1,6 @@
 import React from "react";
 import  StyledButton  from './js/ButtonStyle';
+import CV from "./CV/Karim ishak fahmy CV.pdf";
 
 function Resume() {
     return(
@@ -34,7 +35,8 @@ function Resume() {
     		</div>
 				
     		<div className="resume-middle">
-				<StyledButton variant="contained">Download CV</StyledButton>
+			<a href={CV} download='Karim Ishak CV.pdf' ><StyledButton variant="contained"  >Download CV</StyledButton></a>
+				
     				</div>
     		
     	</div>

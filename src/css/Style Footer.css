@@ -1,0 +1,10 @@
+a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--yellowColor);
+    
+}
+footer{
+    text-align: center;
+    font-size: small;
+}
