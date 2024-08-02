@@ -98,7 +98,7 @@ function ContactMe() {
           <div id="imgFormContainer" >
           <img id="contactImage" src={image1}></img>
             
-              <form id="formStyle" style={{}} ref={form} action="#" className="">
+              <form id="formStyle"  ref={form} action="#" >
                 <div className="form-group" >
                   <input  {...register("fname",{required:true,minLength:{
                     message:"this is req"
@@ -112,7 +112,7 @@ function ContactMe() {
                   <input  {...register("subject",{required:true})}   type="text" className="form-control" placeholder="    Subject" />
                 </div>
                 <div className="form-group">
-                  <textarea  {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
+                  <textarea autoFocus {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
                 </div>
                 <div className="form-group">
                   <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  

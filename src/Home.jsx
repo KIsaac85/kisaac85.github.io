@@ -2,6 +2,7 @@ import React, { useState , useEffect} from 'react'
 import image1 from "./images/2.jpg"
 import { Stack} from '@mui/material';
 import  StyledButton  from './js/ButtonStyle';
+import {Link} from "react-scroll";
 
 
 function Home() {
@@ -32,8 +33,8 @@ function Home() {
        <h2 className={`${className}`}>{role}</h2>
        
       <Stack spacing={2} direction={'row'}>
-       <StyledButton variant="contained">Hire Me</StyledButton>
-       <StyledButton variant="contained">My works</StyledButton>
+      <Link to="contact-section" spy={true} smooth={true} offset={50} duration={500}><StyledButton variant="contained">Hire Me</StyledButton></Link>
+      <Link to="projects-section" spy={true} smooth={true} offset={50} duration={500}><StyledButton variant="contained">My works</StyledButton></Link> 
       </Stack>
          
        </div>

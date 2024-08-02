@@ -35,7 +35,7 @@ function Resume() {
     		</div>
 				
     		<div className="resume-middle">
-			<a href={CV} download='Karim Ishak CV.pdf' ><StyledButton variant="contained"  >Download CV</StyledButton></a>
+			<a href={CV} download='Karim Ishak CV.pdf' ><StyledButton variant="contained">Download CV</StyledButton></a>
 				
     				</div>
     		
