@@ -67,27 +67,27 @@ function ContactMe() {
             <div className="main-flex-column main-whole-width main-relative-position">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
-            <div id="iconsContainer">
-            <div className="iconContainer">
-              <div className="imageContainer">
-                <HomeIcon className="imageIcon" sx={{fontSize:30}}/>
+            <div id="contact-icons-container" className="main-flex-row">
+            <div className="contact-icon-container main-flex-column">
+              <div className="contact-image-container contact-text-centered">
+                <HomeIcon className="contact-image-icon" sx={{fontSize:30}}/>
               </div>
               <h3 >Address</h3>
-              <p id="textCentered">16 Abou Bakr elseddik street Dokki</p>
+              <p className="contact-text-centered">16 Abou Bakr elseddik street Dokki</p>
             </div>
             
           
-            <div className="iconContainer">
-              <div className="imageContainer">
-              <LocalPhoneIcon className="imageIcon" sx={{fontSize:30}}/>
+            <div className="contact-icon-container main-flex-column">
+              <div className="contact-image-container contact-text-centered">
+              <LocalPhoneIcon className="contact-image-icon" sx={{fontSize:30}}/>
               </div>
               <h3 >Contact Number</h3>
               <p><a href="tel://+201224033791">+201224033791</a></p>
             </div>
 
-            <div className="iconContainer">
-              <div className="imageContainer">
-              <EmailIcon className="imageIcon" sx={{fontSize:30}}/>
+            <div className="contact-icon-container main-flex-column">
+              <div className="contact-image-container contact-text-centered">
+              <EmailIcon className="contact-image-icon" sx={{fontSize:30}}/>
               </div>
               <h3>Email Address</h3>
               <p><a href="mailto:info@yoursite.com">karim_isaac@hotmail.com</a></p>
@@ -95,26 +95,26 @@ function ContactMe() {
             </div>
           </div>
   
-          <div id="imgFormContainer" >
-          <img id="contactImage" src={image1}></img>
+          <div id="contact-img-Form-container" className="main-flex-row main-content-center" >
+          <img id="contact-image" src={image1}></img>
             
-              <form id="formStyle"  ref={form} action="#" >
-                <div className="form-group" >
+              <form id="contact-form-style"  ref={form} action="#" >
+                <div className="contact-form-group" >
                   <input  {...register("fname",{required:true,minLength:{
                     message:"this is req"
                   }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder="    Your Name" />
                   <div>{errors.fname?.message}</div>
                 </div>
-                <div className="form-group">
+                <div className="contact-form-group">
                   <input  {...register("email",{required:true})} type="text" className="form-control" placeholder="    Your Email" />
                 </div>
-                <div className="form-group">
+                <div className="contact-form-group">
                   <input  {...register("subject",{required:true})}   type="text" className="form-control" placeholder="    Subject" />
                 </div>
-                <div className="form-group">
-                  <textarea autoFocus {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
+                <div className="contact-form-group">
+                  <textarea  {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
                 </div>
-                <div className="form-group">
+                <div className="contact-form-group">
                   <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
                    onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="">Send Message</StyledButton>
                 </div>

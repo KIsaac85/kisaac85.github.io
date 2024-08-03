@@ -16,7 +16,7 @@
 }
 
 .blackButton {
-        color: black;  
+        color: var(--blackColor);  
 }
 
 #divContainer{

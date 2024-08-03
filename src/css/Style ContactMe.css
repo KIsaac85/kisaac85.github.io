@@ -2,57 +2,47 @@
     padding-top: 20rem;
 }
 
-.imageContainer{
+.contact-image-container{
     background-color: var(--greyContainer);
     border-radius: 50px; 
     width:100px; 
     height:100px;
-    text-align:center;
+  
     
 }
 
-#iconsContainer{
-    display: flex;
-    flex-direction:row;
+#contact-icons-container{
      justify-content:space-around;
 }
 
-.iconContainer{
+.contact-icon-container{
     width:200px;
-    display: flex;
-    flex-direction: column; 
     align-items : center;
 }
 
-.imageIcon{
+.contact-image-icon{
     transform: translateY(35px);
     color: var(--yellowColor);
 }
 
-#textCentered{
+.contact-text-centered{
     text-align: center;
 }
 
-#imgFormContainer{
-    display:flex;
-    flex-direction:row;
+#contact-img-Form-container{
     padding-top: 100px;
-    justify-content: center;
-    
 }
 
-#formStyle{
-    
+#contact-form-style{
      background-color: var(--lightGrey);
-    
 }
 
-img#contactImage{
+img#contact-image{
     width:  502.4px;
     height: 720px;
 }
 
-.form-group > input, textarea{
+.contact-form-group > input, textarea{
     width:600px;
     margin:41.5px;
     height:50px;
