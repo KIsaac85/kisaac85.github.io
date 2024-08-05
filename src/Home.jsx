@@ -3,15 +3,23 @@ import image1 from "./images/2.jpg"
 import { Stack} from '@mui/material';
 import  StyledButton  from './js/ButtonStyle';
 import {Link} from "react-scroll";
+import Fade from '@mui/material/Fade';
+
+
 
 
 function Home() {
-  const [role, setRole] = useState("Text A");
+  const [role, setRole] = useState("Bim App Dev");
   const [className, setClassName] = useState("fade");
 
+  const [checked, setChecked] = React.useState(false);
 
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
     const inter = setInterval(()=>{
-      changeHome()
+      
+      handleChange()
     },5000)
 
 
@@ -25,16 +33,23 @@ function Home() {
 
   return (
   
+    
               
   <div  id="home">  
       <div>
         <span>Hello!</span>
       <h1>I'm <span>Karim Isaac</span></h1>
-       <h2 className={`${className}`}>{role}</h2>
+      <Fade in={checked} timeout={2500}><h2>Bim App Dev</h2></Fade>
+      <Fade in={!checked} timeout={2500}><h2 >A Freelance Full Stack Web Developer</h2></Fade>
+
+      
+       
+       
        
       <Stack spacing={2} direction={'row'}>
       <Link to="contact-section" spy={true} smooth={true} offset={50} duration={500}><StyledButton variant="contained">Hire Me</StyledButton></Link>
       <Link to="projects-section" spy={true} smooth={true} offset={50} duration={500}><StyledButton variant="contained">My works</StyledButton></Link> 
+     
       </Stack>
          
        </div>
