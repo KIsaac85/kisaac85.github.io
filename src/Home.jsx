@@ -5,7 +5,14 @@ import  StyledButton  from './js/ButtonStyle';
 import {Link} from "react-scroll";
 import Fade from '@mui/material/Fade';
 
+window.onfocus = function() {
+  console.log('Focused');
+  
+};
 
+window.onblur = function() {
+  console.log('Not focused');
+};
 
 
 function Home() {
@@ -39,8 +46,8 @@ function Home() {
       <div>
         <span>Hello!</span>
       <h1>I'm <span>Karim Isaac</span></h1>
-      <Fade in={checked} timeout={2500}><h2>Bim App Dev</h2></Fade>
-      <Fade in={!checked} timeout={2500}><h2 >A Freelance Full Stack Web Developer</h2></Fade>
+      <Fade style={{position:"absolute"}} in={checked} timeout={2500}><h2>Bim App Dev</h2></Fade>
+      <Fade style={{position:'relative'}} in={!checked} timeout={2500}><h2 >A Freelance Full Stack Web Developer</h2></Fade>
 
       
        
