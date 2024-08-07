@@ -1,12 +1,14 @@
-#home{
+#home-section{
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
     padding-top:  10rem;
-    
-}
-.text,#home{
     width: 80rem;
     height: 30rem;
+}
+
+.home-relative-position{
+    position: relative;
+    top: -14rem
 }
 
 @keyframes fade-down {
