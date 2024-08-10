@@ -8,6 +8,11 @@
     --greyColor:rgb(153,153,153);
 }
 
+#root{
+    align-items: center;
+  
+}
+
 #main-div{
     width: 80rem;
 }
@@ -26,8 +31,7 @@ body{
     background-color: var(--blackColor);
     font-family: 'poppins', sans-serif, monospace;
     color: var(--color);
-    margin: 0 ;
-    display: flex;
+  
     
     
 }
