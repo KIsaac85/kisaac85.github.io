@@ -28,8 +28,8 @@ function Home() {
   
     
               
-  <div  id="home-section">  
-      <div className='cony' style={{}}>
+  <div  id="home-section" className="main-flex-row main-content-center">  
+      <div>
         
       <Fade  in={checked}  timeout={2500}>
       <div><span>Hello!</span>

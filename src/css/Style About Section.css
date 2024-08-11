@@ -1,6 +1,6 @@
 #about-section{
-    display: flex;
-    justify-content: space-between;
+   
+    justify-content: space-around;
     padding-top:  10rem;
     
     height: 30rem;
@@ -15,9 +15,5 @@
     column-gap: 1rem;
     grid-template-rows: auto auto auto auto auto;
 }
-#about-image-container{
-    /* width: 50%; */
-    /* display: flex; */
-    /* justify-content: start; */
-}
+
     

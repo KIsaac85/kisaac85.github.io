@@ -5,8 +5,9 @@ import image1 from "./images/2.jpg"
 
 function Aboutme() {
     return (
-      <section id="about-section">
-    	<div  className="main-flex-row " style={{ justifyContent:"space-between" }}>
+   
+      <section id="about-section" className="main-flex-row">
+    	
     		
       
     <img src={`${image1}`} alt="personal photo"></img>
@@ -29,7 +30,7 @@ function Aboutme() {
         <li><span className="main-grey-text">+2012-240-33-791</span></li>
     </ul>
     </div>
-    </div>
+    
     </section>
     )
 }

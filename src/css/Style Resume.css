@@ -1,6 +1,6 @@
 #resume-section{
-    display: flex;
-    justify-content:space-around;
+    
+   
     
     padding-top:  10rem;
     
@@ -8,7 +8,7 @@
 }
 .resume-middle{
     width: 100%;
-    height: 10rem;
+   
     padding-top: 1rem;
     display: flex;
     justify-content: center;
@@ -18,12 +18,11 @@
 
 .resume-degrees{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .resume-degree-container{
     width: 30rem;
-    height: 15rem;
     background-color: var(--greyContainer);
     padding: 30px;
 }
