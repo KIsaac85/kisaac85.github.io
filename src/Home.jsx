@@ -45,7 +45,7 @@ function Home() {
       </Stack>
          
        </div>
-      <Fade in={!checked}  className='' style={{position:"relative", left:480}} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
+      <Fade in={!checked}  className='' style={{ position:"relative", left:480}} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
       <Fade in={checked} className='' timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
        
        

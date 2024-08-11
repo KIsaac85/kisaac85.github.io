@@ -6,17 +6,17 @@ import image1 from "./images/2.jpg"
 function Aboutme() {
     return (
       <section id="about-section">
-    	<div className="main-flex-row main-whole-width" >
+    	<div  className="main-flex-row " style={{ justifyContent:"space-between" }}>
     		
-      <div id="about-image-container">
-    		<img src={`${image1}`} alt="personal photo"></img>
-    	</div>
+      
+    <img src={`${image1}`} alt="personal photo"></img>
+   
 
-    <div className="main-flex-column main-whole-width main-relative-position" >
+    <div className="main-flex-column  main-relative-position" >
       <h1 className="main-title-shadow">About</h1>
-    <h2 className="main-title main-font-title">About Me</h2>
-    <p>Better late than never.</p>
-    <ul id="about-list">
+      <h2 className="main-title main-font-title">About Me</h2>
+      
+      <ul id="about-list">
         <li><span>Name:</span> </li>
         <li><span  className="main-grey-textt">Karim Isaac</span></li>
         <li><span>Date of birth:</span> </li>

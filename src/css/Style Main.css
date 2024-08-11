@@ -9,12 +9,12 @@
 }
 
 #root{
-    align-items: center;
+    width: 100%;
   
 }
 
 #main-div{
-    width: 80rem;
+    /* width: 80rem; */
 }
 
 .main-flex-column{
