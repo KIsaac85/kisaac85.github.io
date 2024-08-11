@@ -13,7 +13,14 @@ const Certificates = [
     cert:"FE Exam",
     university:"NCEES USA",
     description: 'Passed the fundamental engineering exam from the NCEES USA."'}
-];
+    ,
+
+    {   
+        id:2,
+        year:"2024",
+        cert:"Udemy",
+        university:"Dr. Angela Yu",
+        description: 'Full stack web development'}];
 
 export default Certificates;
 
