@@ -10,7 +10,7 @@ window.onfocus = ()=> {location.reload();};
 
 
 function Home() {
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = React.useState(true);
   const handleChange = () => {
     setChecked((prev) => !prev);
     
@@ -28,15 +28,15 @@ function Home() {
   
     
               
-  <div  id="home-section" className="main-flex-row main-content-center">  
-      <div>
+  <div  id="home-section" className="main-flex-row " style={{display:"inline-flex"}}>  
+      <div id="hi" style={{}}>
         
       <Fade  in={checked}  timeout={2500}>
       <div><span>Hello!</span>
       <h1>I'm <span>Karim Isaac</span></h1><h2>Bim App Dev</h2></div></Fade>
       <Fade className='home-relative-position'  in={!checked} timeout={2500}>
       <div><span>Hello!</span>
-      <h1>I'm <span>Karim Isaac</span></h1><h2 >A Freelance Full Stack Web Developer</h2></div></Fade>
+      <h1>I'm Civil Engineer Interested in <span> Digital Construction Engineering</span></h1><h2 >A Freelance Full Stack Web Developer</h2></div></Fade>
       
       <Stack className='home-relative-position'  spacing={2} direction={'row'}>
       <Link to="contact-section" spy={true} smooth={true} offset={50} duration={500}><StyledButton variant="contained">Hire Me</StyledButton></Link>
@@ -45,9 +45,10 @@ function Home() {
       </Stack>
          
        </div>
-      <Fade in={!checked}  className='' style={{ position:"relative", left:480}} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
-      <Fade in={checked} className='' timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
        
+      <Fade in={!checked} style={{ }} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
+      <Fade in={checked} timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
+     
        
        </div>
 	 

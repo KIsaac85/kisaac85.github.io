@@ -9,17 +9,30 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import './css/Style Main.css'
 
 
-const pages = ['Home', 'About', 'Resume','Skills','Projects','Contact'];
 const navbarItems =[{
 text:"Home",
-href:"#contact-section",
+href:"#home-section",
 },
 {
   text:"About",
-  href:"#contact-section",
-  }]
+  href:"#about-section",
+  },
+{text:"Resume",
+href:"#resume-section"},
+{
+  text:"Skills",
+  href:"#skills-section"
+},
+{text:"Projects",
+  href:"#projects-section"
+},
+{
+  text:"Contacts",
+  href:"#contact-section"
+}]
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,20 +53,20 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" sx={{backgroundColor : 'black' }}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
-          
+
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#home-section"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              
               fontWeight: 700,
-              
+              fontSize:25,
               color: 'inherit',
               textDecoration: 'none',
+              
             }}
           >
             Karim
@@ -65,16 +78,16 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#home-section"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              
               fontWeight: 700,
-              
               color: 'inherit',
               textDecoration: 'none',
+              fontSize:25,
+              
             }}
           >
             Karim
@@ -82,12 +95,9 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' , justifyContent: "right"} }}>
             {navbarItems.map(({text,href}) => (
               <Button
-              
                 key={text}
-                
                 href={href}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
+                sx={{ my: 2, color: 'white', display: 'block' }}>
                 {text}
                   
               </Button>
@@ -122,9 +132,9 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {navbarItems.map((page) => (
-                <MenuItem key={page.text} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.text}</Typography>
+              {navbarItems.map(({text,href}) => (
+                <MenuItem key={text}  onClick={handleCloseNavMenu}>
+                  <Typography  textAlign="center"><Button href={href} sx={{color:"black"}}>{text}</Button></Typography>
                 </MenuItem>
               ))}
             </Menu>
