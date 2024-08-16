@@ -54,7 +54,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
 
-          <Typography
+          <Typography 
             variant="h6"
             noWrap
             component="a"

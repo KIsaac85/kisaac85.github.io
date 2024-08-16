@@ -5,7 +5,17 @@
 
 .home-relative-position{
     position: relative;
-    top: -14rem
+    top: 2rem
+}
+
+.home-2ndrelative-position{
+    position: relative;
+    top: -10rem
+}
+
+.home-relat-position{
+    position: relative;
+    top:-10rem;
 }
 
 @keyframes fade-down {
