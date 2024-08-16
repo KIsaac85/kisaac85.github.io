@@ -47,7 +47,12 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-
+  const handleMouseEnter = e => {
+    e.target.style.color = "#ffbd39"
+  }
+  const handleMouseLeave = e => {
+    e.target.style.color = "white"
+  }
 
   return (
     <AppBar position="fixed" sx={{backgroundColor : 'black' }}>
@@ -55,6 +60,8 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters >
 
           <Typography 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             variant="h6"
             noWrap
             component="a"
@@ -75,6 +82,8 @@ function ResponsiveAppBar() {
           
           
           <Typography
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
             variant="h5"
             noWrap
             component="a"
@@ -95,6 +104,8 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' , justifyContent: "right"} }}>
             {navbarItems.map(({text,href}) => (
               <Button
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
                 key={text}
                 href={href}
                 sx={{ my: 2, color: 'white', display: 'block' }}>

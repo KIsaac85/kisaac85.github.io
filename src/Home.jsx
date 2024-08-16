@@ -46,7 +46,7 @@ function Home() {
       
        </div>
        
-      <Fade in={!checked} style={{ position:"relative", }} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
+      <Fade in={!checked} style={{ position:"relative",left:480 }} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
       <Fade in={checked} timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
      
        
