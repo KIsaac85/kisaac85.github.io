@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
               fontSize:25,
               color: 'inherit',
               textDecoration: 'none',
-              
+              fontFamily:"poppins"
             }}
           >
             Karim
@@ -96,7 +96,7 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
               fontSize:25,
-              
+              fontFamily:"poppins"
             }}
           >
             Karim
@@ -108,7 +108,7 @@ function ResponsiveAppBar() {
               onMouseLeave={handleMouseLeave}
                 key={text}
                 href={href}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'white', display: 'block', fontFamily:"poppins" }}>
                 {text}
                   
               </Button>
@@ -145,7 +145,7 @@ function ResponsiveAppBar() {
             >
               {navbarItems.map(({text,href}) => (
                 <MenuItem key={text}  onClick={handleCloseNavMenu}>
-                  <Typography  textAlign="center"><Button href={href} sx={{color:"black"}}>{text}</Button></Typography>
+                  <Typography  textAlign="center"><Button href={href} sx={{color:"black", fontFamily:"poppins"}}>{text}</Button></Typography>
                 </MenuItem>
               ))}
             </Menu>

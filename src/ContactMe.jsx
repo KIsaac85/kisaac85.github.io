@@ -65,8 +65,10 @@ function ContactMe() {
     return(
         <section id="contact-section">
             <div className="main-flex-column main-whole-width main-relative-position">
+            <div className="main-bottom-space">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
               <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
+              </div>
             <div id="contact-icons-container" className="main-flex-row">
             <div className="contact-icon-container main-flex-column">
               <div className="contact-image-container contact-text-centered">
@@ -95,7 +97,7 @@ function ContactMe() {
             </div>
           </div>
   
-          <div id="contact-img-Form-container" className="main-flex-row main-content-center" >
+          <div id="contact-img-Form-container " className="main-flex-row main-content-center main-bottom-space" >
           <img id="contact-image" src={image1}></img>
             
               <form id="contact-form-style"  ref={form} action="#" >

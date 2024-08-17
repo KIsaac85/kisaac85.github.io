@@ -28,8 +28,8 @@ function Home() {
   
     
               
-  <div  id="home-section" className="main-flex-row main-content-center" style={{display:""}}>  
-      <div id="hi" style={{}}>
+  <div  id="home-section" className="main-flex-row main-content-center main-top-space">  
+      <div>
         
       <Fade className='home-relative-position' in={checked}  timeout={2500}>
       <div style={{width:600}}><span>Hello!</span>

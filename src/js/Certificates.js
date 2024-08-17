@@ -17,10 +17,22 @@ const Certificates = [
 
     {   
         id:2,
-        year:"2024",
-        cert:"Udemy",
-        university:"Dr. Angela Yu",
-        description: 'Full stack web development'}];
+        year:"2016",
+        cert:"CCP",
+        university:"AACE",
+        description: 'Certified Cost Professional'},
+        {   
+            id:3,
+            year:"2021",
+            cert:"BIM Application Development",
+            university:"Kaitech",
+            description: 'Create Revit Plugins using C#'},
+        {   
+            id:4,
+            year:"2024",
+            cert:"Udemy",
+            university:"Dr. Angela Yu",
+            description: 'Full stack web development'}];
 
 export default Certificates;
 

@@ -6,7 +6,7 @@ import image1 from "./images/2.jpg"
 function Aboutme() {
     return (
    
-      <section id="about-section" className="main-flex-row">
+      <section id="about-section" className="main-flex-row main-top-space">
     	
     		
       

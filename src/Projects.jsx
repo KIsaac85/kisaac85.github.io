@@ -23,9 +23,9 @@ function Projects() {
 	
 	return(
 		<section id="projects-section">
-		<div className="main-flex-column main-whole-width main-relative-position">
+		<div className="main-flex-column main-whole-width main-relative-position main-bottom-space">
               <h1 className="resume-middle main-title-shadow">Projects</h1>
-              <h2 className="resume-middle main-title main-font-title">Our Projects</h2>
+              <h2 className="resume-middle main-title main-font-title">My Projects</h2>
 		</div>
 		<div className="container">
 		<div className="row">
