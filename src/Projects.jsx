@@ -22,16 +22,14 @@ function cards(card){
 function Projects() {
 	
 	return(
-		<section id="projects-section">
+		<section id="projects-section" className="main-top-space">
 		<div className="main-flex-column main-whole-width main-relative-position main-bottom-space">
               <h1 className="resume-middle main-title-shadow">Projects</h1>
               <h2 className="resume-middle main-title main-font-title">My Projects</h2>
 		</div>
-		<div className="container">
-		<div className="row">
+		
 			{projectsData.map(cards)}
-		</div>
-		</div>
+		
 			
 		</section>
     )
