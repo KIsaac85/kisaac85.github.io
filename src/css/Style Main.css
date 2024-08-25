@@ -10,7 +10,6 @@
 
 #root{
     width: 100%;
-  
 }
 
 
@@ -83,5 +82,30 @@ font-weight: 700;
 }
 
 .main-top-space{
-    margin-top: 12rem;
+    margin-top: 13rem;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.main-animate{
+    animation: appear linear;
+    animation-timeline: view();
+    
+}
+
+.main-animate-range-25{
+    animation-range: entry 0 cover 25%;
+}
+
+.main-animate-range-40{
+    animation-range: entry 0 cover 40%;
 }

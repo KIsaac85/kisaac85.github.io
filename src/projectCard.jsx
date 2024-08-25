@@ -13,7 +13,7 @@ function projectCard(props) {
     return(
 
 
-		<Card id="Project-Card-Style">
+		<Card id="Project-Card-Style" className="main-flex-column">
       <CardMedia id="Project-CardMedia-Style" image={props.picture} title={props.title}/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

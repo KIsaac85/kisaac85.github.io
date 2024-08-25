@@ -4,15 +4,15 @@ import Slide from '@mui/material/Slide';
 
 
 function Aboutme() {
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = React.useState(true);
 
   const handleChange = () => {
     setChecked((prev) => !prev);
   };
   
     return (
-   <Slide direction="up" in={true} mountOnEnter unmountOnExit>
-      <section id="about-section" className="main-flex-row main-top-space">
+  
+      <section id="about-section" className="main-flex-row main-top-space main-animate main-animate-range-40" onScroll={handleChange}>
     	
     		
       
@@ -38,7 +38,7 @@ function Aboutme() {
     </div>
     
     </section>
-    </Slide>
+    
     )
 }
 

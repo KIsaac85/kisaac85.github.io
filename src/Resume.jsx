@@ -24,7 +24,7 @@ function CertificatesFunction(certificate) {
 
 function Resume() {
     return(
-    <section id="resume-section">
+    <section id="resume-section" className="main-animate main-animate-range-40">
 
     	<div className="main-flex-column main-whole-width main-relative-position">
     		<div className="ٌresume-middle main-bottom-space">

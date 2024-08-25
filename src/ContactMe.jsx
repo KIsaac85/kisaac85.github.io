@@ -63,7 +63,7 @@ function ContactMe() {
 
 
     return(
-        <section id="contact-section">
+        <section id="contact-section" className="main-animate main-animate-range-40">
             <div className="main-flex-column main-whole-width main-relative-position">
             <div className="main-bottom-space">
               <h1 className="resume-middle main-title-shadow">Contact</h1>
