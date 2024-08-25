@@ -13,4 +13,17 @@ const StyledButton = styled(Button)({
 
 
 
-  export default StyledButton;
+ 
+
+  const CardStyledButton = styled(Button)({
+
+  
+    
+    color:"black",
+    
+    ":hover":{background:"#ffffff",  color:"#ffbd38"},
+    
+  });
+
+  
+  export  {StyledButton , CardStyledButton};

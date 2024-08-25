@@ -1,27 +1,25 @@
 
 
 
-#cardStyle {
+#Project-Card-Style {
         width: 345px;
         display:flex;
         flex-direction: column; 
         align-items:center;
 }
 
-#cardMediaStyle{
+#Project-CardMedia-Style{
         height: 0px; 
         padding-top: 56.25%; 
         margin: 10px;
         width:200px;
 }
 
-.blackButton {
-        color: var(--blackColor);  
-}
 
-#divContainer{
+
+#Project-Card-Container{
         display:flex;
         flex-direction:column;
         align-items:center;
-        margin-top:30px;
+        margin-top:3rem;
 }

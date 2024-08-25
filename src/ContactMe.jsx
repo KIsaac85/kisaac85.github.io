@@ -5,7 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import emailjs from '@emailjs/browser';
 import {useForm} from "react-hook-form";
 import image1 from "./images/2.jpg"
-import  StyledButton  from './js/ButtonStyle';
+import  {StyledButton}  from './js/ButtonStyle';
 
 
 function ContactMe() {

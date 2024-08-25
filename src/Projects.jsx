@@ -6,7 +6,7 @@ function cards(card){
 	
 	return(
 	
-		<div id="divContainer" key = {card.id} >
+		<div id="Project-Card-Container" key = {card.id} >
 			
 	<Card 
 		title={card.title}

@@ -2,7 +2,7 @@ import React from 'react'
 import image1 from "./images/2.jpg";
 import image2 from "./images/1.jpg";
 import { Stack} from '@mui/material';
-import  StyledButton  from './js/ButtonStyle';
+import  {StyledButton}  from './js/ButtonStyle';
 import {Link} from "react-scroll";
 import Fade from '@mui/material/Fade';
 

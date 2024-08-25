@@ -1,5 +1,5 @@
 import React from "react";
-import  StyledButton  from './js/ButtonStyle';
+import  {StyledButton}  from './js/ButtonStyle';
 import CV from "./Resume/Karim ishak fahmy CV.pdf";
 import Certicates from "./Resume/Courses Certificates.pdf";
 import { Stack} from '@mui/material';

@@ -1,11 +1,13 @@
 import React from "react"
 import image1 from "./images/2.jpg"
-
+import Slide from '@mui/material/Slide';
 
 
 function Aboutme() {
+
+  
     return (
-   
+   <Slide direction="up" in={true} mountOnEnter unmountOnExit>
       <section id="about-section" className="main-flex-row main-top-space">
     	
     		
@@ -32,6 +34,7 @@ function Aboutme() {
     </div>
     
     </section>
+    </Slide>
     )
 }
 
