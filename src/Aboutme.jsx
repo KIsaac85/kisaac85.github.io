@@ -4,7 +4,11 @@ import Slide from '@mui/material/Slide';
 
 
 function Aboutme() {
+  const [checked, setChecked] = React.useState(false);
 
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
   
     return (
    <Slide direction="up" in={true} mountOnEnter unmountOnExit>
