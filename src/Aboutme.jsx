@@ -22,7 +22,7 @@ function Aboutme() {
     <div className="main-flex-column  main-relative-position" >
       <h1 className="main-title-shadow">About</h1>
       <h2 className="main-title main-font-title">About Me</h2>
-      
+      <p>I am civil engineer interested in digital transformation of construction</p>
       <ul id="about-list">
         <li><span>Name:</span> </li>
         <li><span  className="main-grey-textt">Karim Isaac</span></li>

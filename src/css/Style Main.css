@@ -38,7 +38,7 @@ div>span,h1>span{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 800;
 }
 
@@ -54,7 +54,7 @@ font-weight: 700;
 .main-title-shadow{
     z-index: -1;
     position:absolute;
-    top: 1.5rem; 
+    top: rem; 
     left:-1rem; 
     color:var(--greyContainer);
 }

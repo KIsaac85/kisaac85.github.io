@@ -3,6 +3,9 @@
     height: 30rem;
 }
 
+.home-container{
+    width: 500px;
+}
 .home-relative-position{
     position: relative;
     top: 2rem
@@ -17,6 +20,8 @@
     position: relative;
     top:-10rem;
 }
+
+
 
 @keyframes fade-down {
     0%{

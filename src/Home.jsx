@@ -29,13 +29,13 @@ function Home() {
     
               
   <div  id="home-section" className="main-flex-row main-content-center main-top-space">  
-      <div>
+      <div className='home-container' >
         
-      <Fade className='home-relative-position' in={checked}  timeout={2500}>
-      <div style={{width:600}}><span>Hello!</span>
+      <Fade  className='home-relative-position' in={checked}  timeout={2500}>
+      <div style={{width:800}}><span>Hello!</span>
       <h1>I'm <span>Karim Isaac</span></h1><h2>Bim App Dev</h2></div></Fade>
       <Fade className='home-relat-position'  in={!checked} timeout={2500}>
-      <div style={{width:600}}><span>Hello!</span>
+      <div style={{width:950}}><span>Hello!</span>
       <h1>I'm Civil Engineer interseted in <span> Digital Construction</span></h1><h2 >A Freelance Full Stack Web Developer</h2></div></Fade>
       
       <Stack className='home-2ndrelative-position'  spacing={2} direction={'row'}>
@@ -45,10 +45,10 @@ function Home() {
       </Stack>
       
        </div>
-       
+       <div className="main-flex-row" >
       <Fade in={!checked} style={{ position:"relative",left:480 }} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
       <Fade in={checked} timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
-     
+      </div>
        
        </div>
 	 
