@@ -28,7 +28,7 @@ function Home() {
   
     
               
-  <div  id="home-section" className="main-flex-row main-content-center main-top-space">  
+  <div  id="home-section" className="main-flex-row main-content-center home-top-space">  
       <div className='home-container' >
         
       <Fade  className='home-relative-position' in={checked}  timeout={2500}>

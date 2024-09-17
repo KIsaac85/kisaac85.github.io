@@ -18,21 +18,17 @@
 
 .home-relat-position{
     position: relative;
-    top:-10rem;
+    top:-14rem;
 }
 
 
 
-@keyframes fade-down {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-    
-}
+
 
 .fade{
     animation: fade-down 2.5s infinite alternate;
+}
+
+.home-top-space{
+    margin-top: 9rem;
 }

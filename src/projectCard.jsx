@@ -24,7 +24,7 @@ function projectCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <CardStyledButton  size="small" href={`//${props.codeLink}`}>Site</CardStyledButton>
+        <CardStyledButton  size="small" href={`//${props.codeLink}`}>Demo</CardStyledButton>
         <CardStyledButton  size="small" href={`//${props.websiteLink}`}>Code</CardStyledButton>
       </CardActions>
     </Card>
