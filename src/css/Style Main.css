@@ -12,17 +12,23 @@
     width: 100%;
 }
 
-
+@media (min-width: 600px){
+    .main-flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-size: 4rem;
+        font-weight: 800;
+    }
+}
 
 .main-flex-column{
     display: flex;
     flex-direction: column;
 }
 
-.main-flex-row{
-    display: flex;
-    flex-direction: row;
-}
+
 
 body{
     background-color: var(--blackColor);
@@ -37,10 +43,7 @@ div>span,h1>span{
     
 }
 
-h1{
-    font-size: 4rem;
-    font-weight: 800;
-}
+
 
 .main-grey-text{
     color: var(--greyColor);
@@ -112,4 +115,20 @@ font-weight: 700;
 
 .main-animate-range-40{
     animation-range: entry 0 cover 40%;
+}
+
+@media (max-width: 600px) {
+    .main-container-overlap{
+        display:relative;
+        width: 100%;
+    }
+    .main-text-overlap{
+        display:absolute;
+        
+    }
+    .main-img-overlap{
+        width: 100%;
+        height: auto; /* Ensures the image is responsive */
+        display: block;
+    }
 }

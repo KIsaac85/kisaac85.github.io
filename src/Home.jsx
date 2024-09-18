@@ -28,8 +28,8 @@ function Home() {
   
     
               
-  <div  id="home-section" className="main-flex-row main-content-center home-top-space">  
-      <div className='home-container' >
+  <div  id="home-section" className="main-flex-row main-content-center home-top-space main-container-overlap" >  
+      <div className='home-paragraph main-text-overlap'>
         
       <Fade  className='home-relative-position' in={checked}  timeout={2500}>
       <div style={{width:800}}><span>Hello!</span>
@@ -46,8 +46,8 @@ function Home() {
       
        </div>
        <div className="main-flex-row" >
-      <Fade in={!checked} style={{ position:"relative",left:480 }} timeout={2500}><img src={`${image1}`} alt="personal photo"></img></Fade>
-      <Fade in={checked} timeout={2500} ><img src={`${image2}`} alt="personal photo"></img></Fade>
+      <Fade className='home-fade-img' in={!checked}  timeout={2500}><img className='main-img-overlap' src={`${image1}`} alt="personal photo"></img></Fade>
+      <Fade in={checked} timeout={2500} ><img className='main-img-overlap' src={`${image2}`} alt="personal photo"></img></Fade>
       </div>
        
        </div>
