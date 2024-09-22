@@ -87,21 +87,17 @@ function Home() {
         </Stack>
       </div>
       <div className="main-flex-row main-mob-abs" style={{ }}>
-        <Fade className="home-fade-img" style={{}} in={!checked} timeout={2500}>
+        <Fade className="home-fade-img main-mob-image" style={{}} in={!checked} timeout={2500}>
           <img
-            style={{  }}
-            className="im"
             src={`${image1}`}
             alt="personal photo"
-          ></img>
+          />
         </Fade>
-        <Fade in={checked} timeout={2500}>
+        <Fade in={checked} timeout={2500} className="main-mob-image">
           <img
-            style={{}}
-            className=""
             src={`${image2}`}
             alt="personal photo"
-          ></img>
+          />
         </Fade>
       </div>
     </div>

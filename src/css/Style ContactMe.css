@@ -41,9 +41,11 @@ img#contact-image{
     width:  502.4px;
     height: 720px;
 }
-
+@media (min-width: 600px) {
+    
+}
 .contact-form-group > input, textarea{
-    width:600px;
+    width:40rem;
     margin:41.5px;
     height:50px;
     border-radius:5px;

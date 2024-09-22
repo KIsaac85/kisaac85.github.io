@@ -16,7 +16,7 @@ function Aboutme() {
     	
     		
       
-    <img src={`${image1}`} alt="personal photo"></img>
+    <img className="main-mob-image" src={`${image1}`} alt="personal photo"></img>
    
 
     <div className="main-flex-column  main-relative-position" >

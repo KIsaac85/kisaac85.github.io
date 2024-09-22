@@ -1,33 +1,38 @@
 #resume-section{
-    
-   
-    
     padding-top:  10rem;
-    
     height: 30rem;
 }
+
 .resume-middle{
     width: 100%;
-   
     padding-top: 1rem;
     display: flex;
     justify-content: center;
 }
 
 
-
-.resume-degrees{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items:center;
-    gap: 4rem;
+@media (min-width: 600px) {
+    .resume-degrees{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items:center;
+        gap: 4rem;
+    }
+    .resume-degree-container{
+        width: 30rem;
+        background-color: var(--greyContainer);
+        padding: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .resume-mob-degrees{
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+    }
 }
 
-.resume-degree-container{
-    width: 30rem;
-    background-color: var(--greyContainer);
-    padding: 30px;
-}
+
 
 
 .resume-date{
