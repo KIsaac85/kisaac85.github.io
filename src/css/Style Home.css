@@ -21,12 +21,13 @@
         position: relative;
         top:-14rem;
     } 
+    .home-fade-img{
+        position:relative;
+        left: 65%;
+    }
 }
 
-.home-fade-img{
-    position:relative;
-    left: 65%;
-}
+
 .fade{
     animation: fade-down 2.5s infinite alternate;
 }
@@ -37,7 +38,4 @@
 
 .home-reduce-width{
     width: 100px;
-}
-@media (min-width: 600px){
-    
 }

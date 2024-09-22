@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React  , { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -53,10 +53,20 @@ function ResponsiveAppBar() {
   const handleMouseLeave = e => {
     e.target.style.color = "white"
   }
+  const [wid, setWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    console.log(wid);
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  
   return (
-    <AppBar position="fixed" sx={{backgroundColor : 'black' }}>
-      <Container maxWidth=""  style={{width:1350}}>
+    <AppBar position="fixed" sx={{backgroundColor : 'black'} } >
+      <Container maxWidth="tr"  style={{width:{wid}}}>
         <Toolbar disableGutters >
 
           <Typography 
