@@ -100,10 +100,10 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontWeight: 700,
+              fontWeight: 600,
               color: 'inherit',
               textDecoration: 'none',
-              fontSize:25,
+              fontSize:20,
               fontFamily:"poppins"
             }}
           >

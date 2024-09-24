@@ -6,6 +6,16 @@
     height: 50rem;
     
 }
-.Skills-image{
-    width: 100%;
+
+
+@media (min-width: 600px) {
+    .Skills-image{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Skills-image{
+        width: 100%;
+    }
 }
