@@ -14,7 +14,7 @@ function Skills() {
 			<div>
 			</div>
 		  
-		  <div style={{justifyContent:"center", display:"flex"}}><img className="" src={skillsImage} style={{width:"50rem"}}></img></div>
+		  <div style={{justifyContent:"center", display:"flex"}}><img className="Skills-image" src={skillsImage} style={{}}></img></div>
        
 			</div>
 		</section>

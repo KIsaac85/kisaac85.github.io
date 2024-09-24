@@ -35,23 +35,32 @@
 
 #contact-form-style{
      background-color: var(--lightGrey);
+     
 }
 
 img#contact-image{
-    width:  502.4px;
+    
     height: 720px;
 }
 @media (min-width: 600px) {
-    
+    .contact-form-group > input , textarea{
+        height:2rem;
+        width:40rem;
+    }
+}
+@media (max-width: 600px) {
+    .contact-form-group > input, textarea{
+        width:15rem;
+        height:2rem;
+    }
 }
 .contact-form-group > input, textarea{
-    width:40rem;
     margin:41.5px;
-    height:50px;
     border-radius:5px;
     font-family: 'poppins', sans-serif, monospace;
     font-size: 15px;
 }
+
 textarea{
     height:150px;
 }

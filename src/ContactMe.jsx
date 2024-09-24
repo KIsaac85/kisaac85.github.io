@@ -1,11 +1,11 @@
-import React, { useState , useRef} from "react";
+import React, { useState , useRef, useEffect} from "react";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
 import emailjs from '@emailjs/browser';
 import {useForm} from "react-hook-form";
 import image1 from "./images/2.jpg"
-import  {StyledButton}  from './js/ButtonStyle';
+import  {StyledButton ,SmallStyledButton}  from './js/ButtonStyle';
 
 
 function ContactMe() {
@@ -57,7 +57,16 @@ function ContactMe() {
     }
     
     
-    
+    const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
     
     
 
@@ -98,7 +107,8 @@ function ContactMe() {
           </div>
   
           <div id="contact-img-Form-container " className="main-flex-row main-content-center main-bottom-space" >
-          <img id="contact-image" src={image1}></img>
+          {width>600&&<img  id="contact-image" src={image1}></img>}
+          
             
               <form id="contact-form-style"  ref={form} action="#" >
                 <div className="contact-form-group" >
@@ -117,8 +127,14 @@ function ContactMe() {
                   <textarea  {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
                 </div>
                 <div className="contact-form-group">
-                  <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
-                   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="">Send Message</StyledButton>
+                  
+                   {width > 600 ? (
+              <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
+                   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >Send Message</StyledButton>
+            ) : (
+              <SmallStyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
+                   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Send Message</SmallStyledButton>
+            )}
                 </div>
                 <div style={{
                   opacity: hiddenDiv ? "0" : "1",

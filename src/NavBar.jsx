@@ -53,20 +53,18 @@ function ResponsiveAppBar() {
   const handleMouseLeave = e => {
     e.target.style.color = "white"
   }
-  const [wid, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
-    console.log(wid);
-    
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   
   return (
     <AppBar position="fixed" sx={{backgroundColor : 'black'} } >
-      <Container maxWidth="tr"  style={{width:{wid}}}>
+      <Container maxWidth="tr"  style={{width:{width}}}>
         <Toolbar disableGutters >
 
           <Typography 
