@@ -46,7 +46,7 @@ function Home() {
           <div style={width > 600 && { width: 950 }}>
             <span>Hello!</span>
             <h1>
-              I'm Civil Engineer interseted in{" "}
+              I'm Civil Engineer interseted in {width<600&&<br/>}
               <span> Digital Construction</span>
             </h1>
             <h2>A Freelance Full Stack Web Developer</h2>
