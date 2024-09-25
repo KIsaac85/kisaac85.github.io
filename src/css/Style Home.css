@@ -28,6 +28,25 @@
     }
 }
 
+@media (max-width: 600px) {
+    .home-relContainer-mob{
+        position: relative;
+        width: 100%;
+    }
+    .home-absInner-mob{
+        position: absolute;
+        left: 25%;
+    }
+    .home-relative-position{
+        position: relative;
+        top: 2rem
+    }
+    .home-relat-position{
+        position: relative;
+        top: -5rem;
+    }
+}
+
 
 .fade{
     animation: fade-down 2.5s infinite alternate;

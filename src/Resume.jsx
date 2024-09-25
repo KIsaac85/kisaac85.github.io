@@ -1,5 +1,5 @@
-import React from "react";
-import  {StyledButton}  from './js/ButtonStyle';
+import React  , { useState, useEffect } from "react";
+import  {StyledButton ,SmallStyledButton}  from './js/ButtonStyle';
 import CV from "./Resume/Karim ishak fahmy CV.pdf";
 import Certicates from "./Resume/Courses Certificates.pdf";
 import { Stack} from '@mui/material';
@@ -23,6 +23,13 @@ function CertificatesFunction(certificate) {
 
 
 function Resume() {
+	const [width, setWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+	  const handleResize = () => setWidth(window.innerWidth);
+	  window.addEventListener("resize", handleResize);
+	  return () => window.removeEventListener("resize", handleResize);
+	}, []);
     return(
     <section id="resume-section" className="main-animate main-animate-range-40">
 
@@ -41,8 +48,8 @@ function Resume() {
 				
     		
 			<Stack className='resume-middle '  spacing={20} direction={'row'}>
-			<a href={CV} download='Karim Ishak CV.pdf'><StyledButton variant="contained">Download CV</StyledButton></a>
-			<a href={Certicates} download='Karim Ishak Certificates.pdf'><StyledButton variant="contained"> Certicates </StyledButton></a>
+			<a href={CV} download='Karim Ishak CV.pdf'>{width>600?<StyledButton variant="contained">Download CV</StyledButton>:<SmallStyledButton variant="contained">Download CV</SmallStyledButton>}</a>
+			<a href={Certicates} download='Karim Ishak Certificates.pdf'>{width>600?<StyledButton variant="contained">Certificates</StyledButton>:<SmallStyledButton variant="contained">Certificates</SmallStyledButton>}</a>
 			</Stack>
 			
     		
