@@ -30,8 +30,7 @@ function Home() {
   return (
     <div
       id="home-section"
-      className="main-flex-row main-content-center home-top-space home-relContainer-mob" 
-    >
+      className="main-flex-row main-content-center home-top-space home-relContainer-mob" >
       <div className="home-paragraph home-absInner-mob" >
         <Fade className="home-relative-position" in={checked} timeout={2500}>
           <div style={width > 600 && { width: 800 }}>
@@ -86,15 +85,15 @@ function Home() {
           </Link>
         </Stack>
       </div>
-      <div className="main-flex-row home-absInner-mob" >
-        <Fade className="home-fade-img main-mob-image" style={{}} in={!checked} timeout={2500}>
-          <img
+      <div className="main-flex-row home-absInner-mob home-img-zindex" >
+        <Fade className="home-fade-img main-mob-image"  in={!checked} timeout={2500}>
+          <img id="home-whiteImg-mob"
             src={`${image1}`}
             alt="personal photo"
           />
         </Fade>
         <Fade in={checked} timeout={2500} className="main-mob-image">
-          <img
+          <img id="home-yellowImg-mob"
             src={`${image2}`}
             alt="personal photo"
           />
