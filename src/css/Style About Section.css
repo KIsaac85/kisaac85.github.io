@@ -1,8 +1,4 @@
-#about-section{
-   
-    justify-content: space-around;
-    height: 30rem;
-}
+
 
 
 
@@ -15,3 +11,22 @@
 }
 
     
+@media (min-width: 600px){
+    #about-section{
+        justify-content: space-around;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 600px){
+    .about-flexMob-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-paragrapgh-list{
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+    }
+}

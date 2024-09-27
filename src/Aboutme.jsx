@@ -12,7 +12,7 @@ function Aboutme() {
   
     return (
   
-      <section id="about-section" className="main-flex-row main-top-space main-animate main-animate-range-40" onScroll={handleChange}>
+      <section id="about-section" className="main-flex-row main-top-space main-animate main-animate-range-40 about-flexMob-col" onScroll={handleChange}>
     	
     		
       
@@ -22,6 +22,7 @@ function Aboutme() {
     <div className="main-flex-column  main-relative-position" >
       <h1 className="main-title-shadow">About</h1>
       <h2 className="main-title main-font-title">About Me</h2>
+      <div className="about-paragrapgh-list">  
       <p>I am civil engineer interested in digital transformation of construction</p>
       <ul id="about-list">
         <li><span>Name:</span> </li>
@@ -36,6 +37,8 @@ function Aboutme() {
         <li><span className="main-grey-text">+2012-240-33-791</span></li>
     </ul>
     </div>
+    </div>
+    
     
     </section>
     
