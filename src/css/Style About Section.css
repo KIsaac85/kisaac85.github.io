@@ -27,12 +27,5 @@
     .about-paragrapgh-list{
         margin-top: 10rem;
     }
-    .about-title-shadow-mob{
-        z-index: -1;
-        position:absolute;
-        font-size: 2rem;
-        top: 2%;
-        left:5%; 
-        color:var(--greyContainer);
-    }
+
 }

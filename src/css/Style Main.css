@@ -40,20 +40,26 @@
         .main-title{
         font-weight: 700;
         }
+        .main-top-space-10{
+            margin-top: 55rem;
+        }
 }
 
 
  @media (max-width: 600px) {
+    .main-top-space-10{
+        margin-top: 85rem;
+    }
      .main-mob-image{
         width:70%;
         height: auto; 
     }
     h1{
         font-size: 1rem;
-        font-weight: 800;
+        font-weight: 700;
     } 
      h2{
-        font-weight: 600;
+        font-weight: 700;
         font-size: 0.8rem;
     } 
     .main-font-title-mob {
@@ -64,13 +70,13 @@
             z-index: -1;
             position:absolute;
             font-size: 2rem;
-            top: 8%;
+            top: 7%;
             left:35%; 
             color:var(--greyContainer);
         }
         
         .main-title-mob{
-            font-weight: 600;
+            font-weight: 700;
             left:33%;
             position:absolute;
         }
@@ -121,9 +127,7 @@ div>span,h1>span{
     margin-top: 13rem;
 }
 
-.main-top-space-10{
-    margin-top: 55rem;
-}
+
 
 @keyframes appear{
     from{

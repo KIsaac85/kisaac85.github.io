@@ -36,7 +36,7 @@ function Resume() {
     	<div className="main-flex-column main-whole-width main-relative-position">
     		<div className="ٌresume-middle main-bottom-space">
           
-          	<h1 className="about-title-shadow-mob main-title-shadow resume-middle">Resume</h1>
+          	<h1 className="resume-title-shadow-mob main-title-shadow resume-middle">Resume</h1>
             <h2 className="resume-middle main-title  main-font-title main-font-title-mob">Resume</h2>
         	</div>
 
