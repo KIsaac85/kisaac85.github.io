@@ -46,38 +46,33 @@
  @media (max-width: 600px) {
      .main-mob-image{
         width:70%;
-        height: auto;
-        
+        height: auto; 
     }
     h1{
         font-size: 1rem;
         font-weight: 800;
-        
-
     } 
      h2{
         font-weight: 600;
         font-size: 0.8rem;
     } 
-    .main-font-title {
+    .main-font-title-mob {
         font-size: 2rem;
-        
         }
         
-        .main-title-shadow{
+        .main-title-shadow-mob{
             z-index: -1;
             position:absolute;
             font-size: 2rem;
-            top: 10%;
-            left:50%; 
+            top: 8%;
+            left:35%; 
             color:var(--greyContainer);
         }
         
-        .main-title{
+        .main-title-mob{
             font-weight: 600;
-            left:50%;
+            left:33%;
             position:absolute;
-
         }
 } 
 
@@ -92,9 +87,6 @@ body{
     background-color: var(--blackColor);
     font-family: 'poppins', sans-serif, monospace;
     color: var(--color);
-  
-    
-    
 }
 div>span,h1>span{
     color: var(--yellowColor);
