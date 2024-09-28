@@ -36,11 +36,11 @@ function Resume() {
     	<div className="main-flex-column main-whole-width main-relative-position">
     		<div className="ٌresume-middle main-bottom-space">
           
-          	<h1 className="main-title-shadow resume-middle">Resume</h1>
-            <h2 className="resume-middle main-title main-font-title">Resume</h2>
+          	<h1 className="about-title-shadow-mob main-title-shadow resume-middle">Resume</h1>
+            <h2 className="resume-middle main-title  main-font-title main-font-title-mob">Resume</h2>
         	</div>
 
-    		<div className="resume-degrees main-bottom-space">
+    		<div className="resume-degrees main-bottom-space resume-mob-degrees">
 
 				{CertificatesData.map(CertificatesFunction)}
     		
