@@ -7,8 +7,6 @@
     border-radius: 50px; 
     width:100px; 
     height:100px;
-  
-    
 }
 
 #contact-icons-container{
@@ -27,6 +25,7 @@
 
 .contact-text-centered{
     text-align: center;
+    
 }
 
 #contact-img-Form-container{
@@ -47,11 +46,23 @@ img#contact-image{
         height:2rem;
         width:40rem;
     }
+    .contact-image-container{
+        background-color: var(--greyContainer);
+        border-radius: 50px; 
+        width:100px; 
+        height:100px;
+    }
 }
 @media (max-width: 600px) {
     .contact-form-group > input, textarea{
         width:15rem;
         height:2rem;
+    }
+    .contact-image-container{
+        background-color: var(--greyContainer);
+        border-radius: 30px; 
+        width:60px; 
+        height:60px;
     }
 }
 .contact-form-group > input, textarea{
@@ -63,4 +74,8 @@ img#contact-image{
 
 textarea{
     height:150px;
+}
+
+.contact-center-icons-mob{
+    align-items: center;
 }

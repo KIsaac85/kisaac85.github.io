@@ -24,8 +24,8 @@ function Projects() {
 	return(
 		<section id="projects-section" className="main-animate main-animate-range-25">
 		<div className="main-flex-column main-whole-width main-relative-position main-bottom-space">
-              <h1 className="resume-middle main-title-shadow">Projects</h1>
-              <h2 className="resume-middle main-title main-font-title">My Projects</h2>
+              <h1 className="resume-middle main-title-shadow skills-title-shadow-mob">Projects</h1>
+              <h2 className="resume-middle main-title main-font-title main-font-title-mob">My Projects</h2>
 		</div>
 		
 			{projectsData.map(cards)}

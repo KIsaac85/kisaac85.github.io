@@ -75,13 +75,13 @@ function ContactMe() {
         <section id="contact-section" className="main-animate main-animate-range-40">
             <div className="main-flex-column main-whole-width main-relative-position">
             <div className="main-bottom-space">
-              <h1 className="resume-middle main-title-shadow">Contact</h1>
-              <h2 className="resume-middle main-title main-font-title">Contact Me</h2>
+              <h1 className="resume-middle main-title-shadow skills-title-shadow-mob">Contact</h1>
+              <h2 className="resume-middle main-title main-font-title main-font-title-mob">Contact Me</h2>
               </div>
-            <div id="contact-icons-container" className="main-flex-row">
-            <div className="contact-icon-container main-flex-column">
+            <div id="contact-icons-container" className={width>600?"main-flex-row":"main-flex-column contact-center-icons-mob"}>
+            <div className="contact-icon-container  main-flex-column">
               <div className="contact-image-container contact-text-centered">
-                <HomeIcon className="contact-image-icon" sx={{fontSize:30}}/>
+                <HomeIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20}}/>
               </div>
               <h3 >Address</h3>
               <p className="contact-text-centered">16 Abou Bakr elseddik street Dokki</p>
@@ -90,7 +90,7 @@ function ContactMe() {
           
             <div className="contact-icon-container main-flex-column">
               <div className="contact-image-container contact-text-centered">
-              <LocalPhoneIcon className="contact-image-icon" sx={{fontSize:30}}/>
+              <LocalPhoneIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20 }}/>
               </div>
               <h3 >Contact Number</h3>
               <p><a href="tel://+201224033791">+201224033791</a></p>
@@ -98,7 +98,7 @@ function ContactMe() {
 
             <div className="contact-icon-container main-flex-column">
               <div className="contact-image-container contact-text-centered">
-              <EmailIcon className="contact-image-icon" sx={{fontSize:30}}/>
+              <EmailIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20}}/>
               </div>
               <h3>Email Address</h3>
               <p><a href="mailto:info@yoursite.com">karim_isaac@hotmail.com</a></p>
