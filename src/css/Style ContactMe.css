@@ -54,15 +54,23 @@ img#contact-image{
     }
 }
 @media (max-width: 600px) {
+    .contact-title-shadow-mob{
+        z-index: -1;
+        position:absolute;
+        font-size: 3rem;
+        top: 1%;
+        left:7%; 
+        color:var(--greyContainer);
+    }
     .contact-form-group > input, textarea{
         width:15rem;
         height:2rem;
     }
     .contact-image-container{
         background-color: var(--greyContainer);
-        border-radius: 30px; 
-        width:60px; 
-        height:60px;
+        border-radius: 40px; 
+        width:80px; 
+        height:80px;
     }
 }
 .contact-form-group > input, textarea{

@@ -75,7 +75,7 @@ function ContactMe() {
         <section id="contact-section" className="main-animate main-animate-range-40">
             <div className="main-flex-column main-whole-width main-relative-position">
             <div className="main-bottom-space">
-              <h1 className="resume-middle main-title-shadow skills-title-shadow-mob">Contact</h1>
+              <h1 className="resume-middle main-title-shadow contact-title-shadow-mob">Contact</h1>
               <h2 className="resume-middle main-title main-font-title main-font-title-mob">Contact Me</h2>
               </div>
             <div id="contact-icons-container" className={width>600?"main-flex-row":"main-flex-column contact-center-icons-mob"}>

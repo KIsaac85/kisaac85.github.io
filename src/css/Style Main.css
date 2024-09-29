@@ -69,8 +69,8 @@
         .main-title-shadow-mob{
             z-index: -1;
             position:absolute;
-            font-size: 2rem;
-            top: 7%;
+            font-size: 3rem;
+            top: 4%;
             left:35%; 
             color:var(--greyContainer);
         }
