@@ -8,11 +8,11 @@
     --greyColor:rgb(153,153,153);
 }
 
-#root , #main-div {
+#root {
     width: 100%;
 }
 
-@media (min-width: 600px){
+@media (min-width: 800px){
     .main-flex-row{
         display: flex;
         flex-direction: row;
@@ -46,7 +46,7 @@
 }
 
 
- @media (max-width: 600px) {
+ @media (max-width: 800px) {
     .main-top-space-10{
         margin-top: 85rem;
     }
@@ -93,6 +93,7 @@ body{
     background-color: var(--blackColor);
     font-family: 'poppins', sans-serif, monospace;
     color: var(--color);
+    margin: 0;
 }
 div>span,h1>span{
     color: var(--yellowColor);

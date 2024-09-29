@@ -41,7 +41,7 @@ img#contact-image{
     
     height: 720px;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .contact-form-group > input , textarea{
         height:2rem;
         width:40rem;
@@ -53,7 +53,7 @@ img#contact-image{
         height:100px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .contact-title-shadow-mob{
         z-index: -1;
         position:absolute;

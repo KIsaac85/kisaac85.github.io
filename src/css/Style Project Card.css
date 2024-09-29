@@ -13,7 +13,7 @@
         width:200px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
         #Project-Card-Container{
                 display:flex;
                 flex-direction:column;
@@ -22,7 +22,7 @@
         }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
         #Project-Card-Container{
                 display:flex;
                 flex-direction:column;

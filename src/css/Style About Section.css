@@ -11,14 +11,14 @@
 }
 
     
-@media (min-width: 600px){
+@media (min-width: 800px){
     #about-section{
         justify-content: space-around;
         height: 30rem;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     .about-flexMob-col{
         display: flex;
         flex-direction: column;

@@ -24,7 +24,7 @@
         padding: 30px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .resume-mob-degrees{
         display: flex;
         flex-direction: column;
