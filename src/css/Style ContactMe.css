@@ -63,9 +63,11 @@ img#contact-image{
         color:var(--greyContainer);
     }
     .contact-form-group > input, textarea{
-        width:15rem;
+        width: 100%;
         height:2rem;
+        box-sizing: border-box;
     }
+    
     .contact-image-container{
         background-color: var(--greyContainer);
         border-radius: 40px; 
