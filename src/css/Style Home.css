@@ -5,17 +5,17 @@
     .home-paragraph{
         width: 450px;
     }
-    .home-relative-position{
+    .home-relSm-position{
         position: relative;
         top: 2rem
     }
     
-    .home-2ndrelative-position{
+    .home-ButtonRelative-position{
         position: relative;
         top: -10rem
     }
     
-    .home-relat-position{
+    .home-relBig-position{
         position: relative;
         top:-14rem;
     } 
@@ -42,33 +42,37 @@
         position: absolute;
         left: 18%;
     }
-    .home-relative-position{
+    .home-relSm-position{
         position: relative;
-        top: 5rem
+        top: 240px;
     }
 
-    .home-relat-position{
+    .home-relBig-position{
         position: relative;
-        top: -1rem;
+        top: 130px;
     }
 
     #home-yellowImg-mob{
         position: relative;
         right:   0%;
-        top: -20.5rem;
+        top: -330px;
     }
 
     #home-whiteImg-mob{
         position: relative;
         left: 0.8%;
-        top: -6.1rem;
+        top: -98px;
     }
 
     .home-top-space{
-        margin-top: 11rem;
+        margin-top: 176px;
     }
     #home-section{
-        height: 10rem;
+        height: 160px;
+    }
+    .home-ButtonRelative-position{
+        position: relative;
+        top: 128px;
     }
 }
 

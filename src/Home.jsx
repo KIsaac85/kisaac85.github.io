@@ -32,7 +32,7 @@ function Home() {
       id="home-section"
       className="main-flex-row main-content-center home-top-space home-relContainer-mob" >
       <div className="home-paragraph home-absInner-mob" >
-        <Fade className="home-relative-position" in={checked} timeout={2500}>
+        <Fade className="home-relSm-position" in={checked} timeout={2500}>
           <div style={width > 600 && { width: 800 }}>
             <span>Hello!</span>
             <h1>
@@ -41,7 +41,7 @@ function Home() {
             <h2>Bim App Dev</h2>
           </div>
         </Fade>
-        <Fade className="home-relat-position" in={!checked} timeout={2500}>
+        <Fade className="home-relBig-position" in={!checked} timeout={2500}>
           <div style={width > 600 && { width: 950 }}>
             <span>Hello!</span>
             <h1>
@@ -53,7 +53,7 @@ function Home() {
         </Fade>
 
         <Stack
-          className="home-2ndrelative-position"
+          className="home-ButtonRelative-position"
           spacing={2}
           direction={"row"}
         >
