@@ -20,8 +20,8 @@ function Aboutme() {
    
 
     <div className="main-flex-column  main-relative-position" >
-      <h1 className="main-title-shadow-mob">About</h1>
-      <h2 className="main-title-mob main-font-title-mob">About Me</h2>
+      <h1 className="main-title-shadow-mob main-title-shadow">About</h1>
+      <h2 className="main-title-mob main-font-title-mob main-title main-font-title">About Me</h2>
       <div className="about-paragrapgh-list">  
       <p>I am civil engineer interested in digital transformation of construction</p>
       <ul id="about-list">

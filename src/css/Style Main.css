@@ -32,7 +32,7 @@
         .main-title-shadow {
             z-index: -1;
             position: absolute;
-            top: rem;
+                
             left: -1rem;
             color: var(--greyContainer);
         }
