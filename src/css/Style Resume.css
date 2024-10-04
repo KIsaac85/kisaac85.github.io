@@ -35,7 +35,6 @@
         width: 19rem;
         background-color: var(--greyContainer);
         padding: 30px;
-        
     }
     .resume-title-shadow-mob{
         z-index: -1;
