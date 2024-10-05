@@ -34,11 +34,10 @@
 
 #contact-form-style{
      background-color: var(--lightGrey);
-     
+     padding: 10px 15px;
 }
 
 img#contact-image{
-    
     height: 720px;
 }
 @media (min-width: 800px) {
@@ -62,12 +61,7 @@ img#contact-image{
         left:7%; 
         color:var(--greyContainer);
     }
-    .contact-form-group > input, textarea{
-        width: auto;
-        min-height:2rem;
-        min-width:fit-content;
-        box-sizing: border-box;
-    }
+
     
     .contact-image-container{
         background-color: var(--greyContainer);
@@ -76,17 +70,23 @@ img#contact-image{
         height:80px;
     }
 }
-.contact-form-group > input, textarea{
-    margin: 40px;
+.contact-form-group {
+    padding: 20px;
+    margin-bottom: 10px;
     border-radius:5px;
-    font-family: 'poppins', sans-serif, monospace;
     font-size: 15px;
+    box-sizing: border-box;
+    
 }
 
 textarea{
     height:150px;
 }
 
+input,textarea{
+    width: 100%;
+    font-family: 'poppins', sans-serif, monospace;
+}
 .contact-center-icons-mob{
     align-items: center;
 }

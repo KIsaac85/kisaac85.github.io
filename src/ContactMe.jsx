@@ -114,17 +114,17 @@ function ContactMe() {
                 <div className="contact-form-group" >
                   <input  {...register("fname",{required:true,minLength:{
                     message:"this is req"
-                  }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder="    Your Name" />
+                  }})}aria-invalid={errors.fname ? "true" : "false"}  type="text" className="form-control" placeholder=" Your Name" />
                   <div>{errors.fname?.message}</div>
                 </div>
                 <div className="contact-form-group">
-                  <input  {...register("email",{required:true})} type="text" className="form-control" placeholder="    Your Email" />
+                  <input  {...register("email",{required:true})} type="text" className="form-control" placeholder=" Your Email" />
                 </div>
                 <div className="contact-form-group">
-                  <input  {...register("subject",{required:true})}   type="text" className="form-control" placeholder="    Subject" />
+                  <input  {...register("subject",{required:true})}   type="text" className="form-control" placeholder=" Subject" />
                 </div>
                 <div className="contact-form-group">
-                  <textarea  {...register("message",{required:true})}  id="" cols="30" rows="7" className="form-control" placeholder="   Message" ></textarea>
+                  <textarea  {...register("message",{required:true})}  id="" cols="30" ro ws="7" className="form-control" placeholder=" Message" ></textarea>
                 </div>
                 <div className="contact-form-group">
                   
