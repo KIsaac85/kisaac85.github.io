@@ -11,7 +11,7 @@
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .resume-degrees{
         display: grid;
         grid-template-columns: 1fr 1fr;
