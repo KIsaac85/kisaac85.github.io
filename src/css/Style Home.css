@@ -33,9 +33,9 @@
 .home-img-zindex{
     z-index: -1;
 }
-@media (max-width: 800px) {
+@media (max-width: 488px) {
     .home-relContainer-mob{
-        position: relative;
+        position: absolute;
         width: 100%;
     }
     .home-absInner-mob{
@@ -44,35 +44,36 @@
     }
     .home-relSm-position{
         position: relative;
-        top: 240px;
+        
+        left: 20%;
     }
 
     .home-relBig-position{
         position: relative;
-        top: 130px;
+        
+        left: 20%;
     }
 
     #home-yellowImg-mob{
         position: relative;
-        right:   0%;
-        top: -330px;
+        right:   -20%;
+        
     }
 
     #home-whiteImg-mob{
         position: relative;
-        left: 0.8%;
-        top: -98px;
+        left: 20%;
+        
     }
 
-    .home-top-space{
-        margin-top: 176px;
-    }
+
     #home-section{
         height: 160px;
     }
     .home-ButtonRelative-position{
         position: relative;
-        top: 128px;
+        
+        left: 20%;
     }
 }
 
