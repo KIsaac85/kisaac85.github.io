@@ -1,7 +1,7 @@
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 489px) {
     .home-paragraph{
         width: 450px;
     }
@@ -37,43 +37,46 @@
     .home-relContainer-mob{
         position: absolute;
         width: 100%;
+        top:0;
+        bottom: 0;
+        
     }
     .home-absInner-mob{
-        position: absolute;
-        left: 18%;
+        position: relative;
+        width: 80%;
+        left: 20%;
+        
     }
     .home-relSm-position{
         position: relative;
+        top:320px;
         
-        left: 20%;
     }
 
     .home-relBig-position{
         position: relative;
+        top:250px;
         
-        left: 20%;
     }
 
     #home-yellowImg-mob{
         position: relative;
-        right:   -20%;
-        
+        top: -450px;
     }
 
     #home-whiteImg-mob{
         position: relative;
-        left: 20%;
-        
+        top:-200px;
     }
 
 
     #home-section{
-        height: 160px;
+        height: 500px;
+        
     }
     .home-ButtonRelative-position{
         position: relative;
-        
-        left: 20%;
+        top:250px;
     }
 }
 
@@ -84,6 +87,4 @@
 
 
 
-.home-reduce-width{
-    width: 100px;
-}
+

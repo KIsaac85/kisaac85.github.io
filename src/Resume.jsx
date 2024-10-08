@@ -48,7 +48,7 @@ function Resume() {
 				
     		
 			<Stack className='resume-middle '  spacing={20} direction={'row'}>
-			<a href={CV} download='Karim Ishak CV.pdf'>{width>600?<StyledButton variant="contained">Download CV</StyledButton>:<SmallStyledButton variant="contained">Download CV</SmallStyledButton>}</a>
+			<a href={CV} download='Karim Ishak CV.pdf'>{width>600?<StyledButton variant="contained">Download CV</StyledButton>:<SmallStyledButton variant="contained">CV</SmallStyledButton>}</a>
 			<a href={Certicates} download='Karim Ishak Certificates.pdf'>{width>600?<StyledButton variant="contained">Certificates</StyledButton>:<SmallStyledButton variant="contained">Certificates</SmallStyledButton>}</a>
 			</Stack>
 			

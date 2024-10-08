@@ -124,7 +124,7 @@ function ContactMe() {
                   <input  {...register("subject",{required:true})}   type="text" className="form-control" placeholder=" Subject" />
                 </div>
                 <div className="contact-form-group">
-                  <textarea  {...register("message",{required:true})}  id="" cols="30" ro ws="7" className="form-control" placeholder=" Message" ></textarea>
+                  <textarea  {...register("message",{required:true})}  id="" cols="30"  ws="7" className="form-control" placeholder=" Message" ></textarea>
                 </div>
                 <div className="contact-form-group">
                   
@@ -132,7 +132,7 @@ function ContactMe() {
               <StyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
                    onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >Send Message</StyledButton>
             ) : (
-              <SmallStyledButton style={{marginLeft:50}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
+              <SmallStyledButton style={{marginLeft:0}} variant="contained" type="submit" value="Send Message" onClick={handleSubmit(onSubmit)}  
                    onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Send Message</SmallStyledButton>
             )}
                 </div>
