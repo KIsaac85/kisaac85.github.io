@@ -60,6 +60,7 @@ img#contact-image{
         top: 1%;
         left:7%; 
         color:var(--greyContainer);
+        max-width: 95%;
     }
 
     

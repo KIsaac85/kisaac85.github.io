@@ -43,6 +43,7 @@
         top: 1%;
         left:5%; 
         color:var(--greyContainer);
+        max-width: 95%;
     }
 }
 

@@ -78,7 +78,7 @@ function ContactMe() {
               <h1 className="resume-middle main-title-shadow contact-title-shadow-mob">Contact</h1>
               <h2 className="resume-middle main-title main-font-title main-font-title-mob">Contact Me</h2>
               </div>
-            <div id="contact-icons-container" className={width>600?"main-flex-row":"main-flex-column contact-center-icons-mob"}>
+            <div id="contact-icons-container" className={width>800?"main-flex-row":"main-flex-column contact-center-icons-mob"}>
             <div className="contact-icon-container  main-flex-column">
               <div className="contact-image-container contact-text-centered">
                 <HomeIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20}}/>
@@ -107,7 +107,7 @@ function ContactMe() {
           </div>
   
           <div id="contact-img-Form-container " className="main-flex-row main-content-center main-bottom-space" >
-          {width>600&&<img  id="contact-image" src={image1}></img>}
+          {width>900&&<img  id="contact-image" src={image1}></img>}
           
             
               <form id="contact-form-style"  ref={form} action="#" >
