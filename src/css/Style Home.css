@@ -1,7 +1,7 @@
 
 
 
-@media (min-width: 489px) {
+@media (min-width: 600px) {
     .home-paragraph{
         width: 450px;
     }
@@ -33,7 +33,22 @@
 .home-img-zindex{
     z-index: -1;
 }
-@media (max-width: 488px) {
+@media (min-width: 488px) and (max-width:600px){
+ 
+    .home-absInner-mob{
+        
+        left: 30%;
+        
+    }
+}@media (max-width:488px){
+ 
+    .home-absInner-mob{
+        
+        left: 25%;
+        
+    }
+}
+@media (max-width: 600px) {
     .home-relContainer-mob{
         position: absolute;
         width: 100%;
@@ -44,7 +59,7 @@
     .home-absInner-mob{
         position: relative;
         width: 80%;
-        left: 20%;
+        
         
     }
     .home-relSm-position{

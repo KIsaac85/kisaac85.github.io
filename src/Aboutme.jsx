@@ -23,7 +23,7 @@ function Aboutme() {
       <h1 className="main-title-shadow-mob main-title-shadow">About</h1>
       <h2 className="main-title-mob main-font-title-mob main-title main-font-title">About Me</h2>
       <div className="about-paragrapgh-list">  
-      <p>I am civil engineer interested in digital transformation of construction</p>
+      <p>I am civil engineer interested in digital transformation of construction and web development</p>
       <ul id="about-list">
         <li><span>Name:</span> </li>
         <li><span  className="main-grey-textt">Karim Isaac</span></li>

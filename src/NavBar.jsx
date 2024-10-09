@@ -63,9 +63,9 @@ function ResponsiveAppBar() {
 
   
   return (
-    <AppBar   position="fixed"  sx={{maxWidth:{width}, backgroundColor : 'black', left:0} } >
+    <AppBar   position="fixed"  sx={{ backgroundColor : 'black', left:0} } >
       <Container   >
-        <Toolbar disableGutters="true"  >
+        <Toolbar disableGutters  >
 
           <Typography 
             onMouseEnter={handleMouseEnter}
