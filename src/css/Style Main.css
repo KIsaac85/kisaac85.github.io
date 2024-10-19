@@ -11,12 +11,14 @@
 #root {
     width: 100%;
 }
-
-@media (min-width: 800px){
+@media (min-width: 600px){
     .main-flex-row{
         display: flex;
         flex-direction: row;
     }
+}
+@media (min-width: 800px){
+
     h1{
         font-size: 4rem;
         font-weight: 800;
@@ -44,14 +46,19 @@
             margin-top: 55rem;
         }
 }
-
+@media (max-width: 600px) {
+    .main-mob-image{
+        width:200px;
+        height: auto; 
+    }
+}
 
  @media (max-width: 800px) {
     .main-top-space-10{
         margin-top: 85rem;
     }
      .main-mob-image{
-        width:200px;
+        width: 180px;
         height: auto; 
     }
     h1{

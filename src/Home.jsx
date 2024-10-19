@@ -64,7 +64,7 @@ function Home() {
             offset={50}
             duration={500}
           >
-            {width > 600 ? (
+            {width > 800 ? (
               <StyledButton variant="contained">Hire Me</StyledButton>
             ) : (
               <SmallStyledButton variant="contained">Hire Me</SmallStyledButton>
@@ -77,7 +77,7 @@ function Home() {
             offset={50}
             duration={500}
           >
-            {width > 600 ? (
+            {width > 800 ? (
               <StyledButton variant="contained">My Work</StyledButton>
             ) : (
               <SmallStyledButton variant="contained">My Work</SmallStyledButton>
