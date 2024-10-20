@@ -35,7 +35,7 @@
 #contact-form-style{
      background-color: var(--lightGrey);
      padding: 10px 15px;
-     min-width: 95%;
+    
 }
 
 img#contact-image{
@@ -44,13 +44,22 @@ img#contact-image{
 @media (min-width: 800px) {
     .contact-form-group > input , textarea{
         height:2rem;
-        width:40rem;
+        
     }
     .contact-image-container{
         background-color: var(--greyContainer);
         border-radius: 50px; 
         width:100px; 
         height:100px;
+    }
+    
+}
+#contact-form-style{
+    min-width: 450px;
+}
+@media(max-width:900px){
+    #contact-form-style{
+        min-width: 96%;
     }
 }
 @media (max-width: 800px) {
@@ -64,7 +73,7 @@ img#contact-image{
         max-width: 90%;
     }
 
-    
+ 
     .contact-image-container{
         background-color: var(--greyContainer);
         border-radius: 40px; 
