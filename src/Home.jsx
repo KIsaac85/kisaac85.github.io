@@ -45,7 +45,7 @@ function Home() {
           <div style={width > 600 && { width: 950 }}>
             <span>Hello!</span>
             <h1>
-              I'm Civil Engineer interseted in {width<600&&<br/>}
+              I'm Civil Engineer interseted in {width<800&&<br/>}
               <span> Digital Construction</span>
             </h1>
             <h2>A Freelance Full Stack Web Developer</h2>
@@ -64,7 +64,7 @@ function Home() {
             offset={50}
             duration={500}
           >
-            {width > 800 ? (
+            {width > 1000 ? (
               <StyledButton variant="contained">Hire Me</StyledButton>
             ) : (
               <SmallStyledButton variant="contained">Hire Me</SmallStyledButton>
@@ -77,7 +77,7 @@ function Home() {
             offset={50}
             duration={500}
           >
-            {width > 800 ? (
+            {width > 1000 ? (
               <StyledButton variant="contained">My Work</StyledButton>
             ) : (
               <SmallStyledButton variant="contained">My Work</SmallStyledButton>

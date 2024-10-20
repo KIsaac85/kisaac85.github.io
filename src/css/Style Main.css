@@ -11,7 +11,7 @@
 #root {
     width: 100%;
 }
-@media (min-width: 600px){
+@media (min-width: 599px){
     .main-flex-row{
         display: flex;
         flex-direction: row;
@@ -46,20 +46,29 @@
             margin-top: 55rem;
         }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .main-mob-image{
         width:200px;
         height: auto; 
     }
 }
-
+@media (min-width:599px)and (max-width: 800px) {
+ 
+     .main-mob-image{
+        
+        width: 40%;
+        
+    }
+}
  @media (max-width: 800px) {
     .main-top-space-10{
         margin-top: 85rem;
     }
      .main-mob-image{
-        width: 180px;
+        position: relative;
         height: auto; 
+        
+        
     }
     h1{
         font-size: 1rem;

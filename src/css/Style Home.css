@@ -22,12 +22,45 @@
 */
 
 @media (min-width: 599px) and (max-width:800px){
-
+    #home-section{
+        height: 400px;
+        
+    }
     .home-top-space{
         margin-top: 9rem;
     }
+    .home-absInner-mob{
+        position: relative;
+        max-width: 50%;
+        
+        
+    }
+    #home-whiteImg-mob{
+        width: auto;
+        left: 20px;
+    }
 
-   
+    #home-yellowImg-mob{
+        object-fit: cover;
+        width: auto;
+        max-width: 250px;
+        left: -240px;
+    }
+   .home-paragraph{
+    top: 15%;
+    left: 5%;
+  
+   }
+   .home-relBig-position{
+    position: relative;
+    bottom: 15%;
+    max-width: 100%;
+}
+.home-relSm-position{
+    position: relative;
+    top:2rem;
+    max-width: 100%;
+}
 }
 @media (min-width: 1000px) {
     .home-paragraph{
@@ -47,6 +80,7 @@
         position: relative;
         top:-14rem;
     } 
+   
     .home-fade-img{
         position:relative;
         left: 65%;
