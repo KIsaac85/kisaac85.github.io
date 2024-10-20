@@ -17,7 +17,11 @@
         height: 30rem;
     }
 }
-
+@media (max-width:600px){
+    #about-section{
+        margin-top: 35rem;
+    }
+}
 @media (max-width: 800px){
     .about-flexMob-col{
         display: flex;
@@ -28,8 +32,6 @@
         margin-top: 10rem;
         padding: 10px;
     }
-    #about-section{
-        margin-top: 35rem;
-    }
+  
 
 }
