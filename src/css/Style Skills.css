@@ -1,5 +1,9 @@
 
-
+@media (min-width: 800px) and (max-width:1200px){
+    #skills-section{
+        padding-top:  90rem;
+    }
+}
 
 @media (min-width: 800px) {
     .Skills-image{
@@ -8,24 +12,12 @@
     #skills-section{
         display: flex;
         justify-content:space-around;
-        padding-top:  25rem;
+        
         height: 50rem;
         
     }
 }
-
-@media (max-width: 800px) {
-    #skills-section{
-        display: flex;
-        justify-content:space-around;
-        padding-top:  25rem;
-        height: 20rem;
-        
-    }
-
-    .Skills-image{
-        width: 100%;
-    }
+@media (max-width: 1200px) {
     .skills-title-shadow-mob{
         z-index: -1;
         position:absolute;
@@ -35,4 +27,18 @@
         color:var(--greyContainer);
         max-width: 95%;
     }
+    .Skills-image{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    #skills-section{
+        display: flex;
+        justify-content:space-around;
+        padding-top:  25rem;
+        height: 20rem;
+    }
+
+  
+
 }
