@@ -106,7 +106,7 @@ function ContactMe() {
             </div>
           </div>
   
-          <div id="contact-img-Form-container " className="main-flex-row main-content-center main-bottom-space" >
+          <div id="contact-img-Form-container " className="main-flex-row main-content-center main-bottom-space">
           {width>900&&<img  id="contact-image" src={image1}></img>}
           
             

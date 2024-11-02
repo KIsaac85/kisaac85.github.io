@@ -13,7 +13,8 @@ window.onfocus = () => {
 function Home() {
   const [checked, setChecked] = React.useState(true);
   const [width, setWidth] = useState(window.innerWidth);
-
+  
+  
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -45,7 +46,7 @@ function Home() {
           <div style={width > 600 && { width: 950 }}>
             <span>Hello!</span>
             <h1>
-              I'm Civil Engineer interseted in {width<800&&<br/>}
+              I'm Civil Engineer {1250<width<1400&&<br/>}interseted in {width<800&&<br/>}
               <span> Digital Construction</span>
             </h1>
             <h2>A Freelance Full Stack Web Developer</h2>

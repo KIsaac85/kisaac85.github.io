@@ -57,6 +57,12 @@ img#contact-image{
 #contact-form-style{
     min-width: 450px;
 }
+
+@media(min-width:900px){
+    #contact-form-style{
+       width: 50%;
+    }
+}
 @media(max-width:900px){
     #contact-form-style{
         min-width: 96%;

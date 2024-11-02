@@ -17,7 +17,13 @@
         flex-direction: row;
     }
 }
-@media (min-width: 1199px){
+
+@media (min-width: 1000px) and (max-width: 1250px){
+    .main-flex-row{
+        justify-content: center;
+    }
+}
+@media (min-width: 1250px){
 
     h1{
         font-size: 4rem;
@@ -60,7 +66,7 @@
         
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
     .main-font-title-mob {
         font-size: 2rem;
         }
