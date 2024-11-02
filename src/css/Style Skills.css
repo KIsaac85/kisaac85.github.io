@@ -4,7 +4,12 @@
         padding-top:  90rem;
     }
 }
-
+@media (min-width: 1200px) {
+  
+    #skills-section{
+        padding-top:  20rem;
+    }
+}
 @media (min-width: 800px) {
     .Skills-image{
         width: 70%;
@@ -12,9 +17,7 @@
     #skills-section{
         display: flex;
         justify-content:space-around;
-        
         height: 50rem;
-        
     }
 }
 @media (max-width: 1200px) {

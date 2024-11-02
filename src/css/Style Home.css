@@ -1,5 +1,5 @@
 
-@media (min-width: 801px) and (max-width:1200px){
+@media (min-width: 801px) and (max-width:1250px){
     #home-section{
         height: 400px;
         width: 100%;
@@ -15,15 +15,15 @@
     }
     #home-whiteImg-mob{
         width: auto;
-        left: 30%;
+        left: 25%;
         position: relative;
     }
 
     #home-yellowImg-mob{
         object-fit: cover;
         width: auto;
-        max-width: 180px;
-        right: 10%;
+        max-width: 250px;
+        right: 30%;
         position: relative;
     }
    .home-paragraph{
@@ -119,7 +119,7 @@
         position: relative;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
     .home-paragraph{
         width: 450px;
     }
