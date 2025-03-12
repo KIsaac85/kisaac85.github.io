@@ -30,7 +30,7 @@ href:"#resume-section"},
   href:"#projects-section"
 },
 {
-  text:"Contacts",
+  text:"Contact",
   href:"#contact-section"
 }]
 
@@ -53,6 +53,26 @@ function ResponsiveAppBar() {
   const handleMouseLeave = e => {
     e.target.style.color = "white"
   }
+
+
+  const handleScroll = (event, targetId) => {
+    event.preventDefault(); // Prevent default link behavior
+    setAnchorElNav(null); // Close menu on mobile
+
+    const navbar = document.querySelector(".MuiAppBar-root");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+      let extraOffset = 20; // Adjust this value for finer control
+      if (targetId === "#skills-section" || targetId === "#projects-section"|| targetId === "#contact-section") {
+        extraOffset = -300; // Increase offset for these sections
+      }
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight - extraOffset;
+      
+      window.scrollTo({ top: targetPosition, behavior: "smooth" }); // Smooth scroll
+    }
+  };
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -73,7 +93,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#home-section"
+            onClick={(e) => handleScroll(e, "#home-section")}
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -81,7 +101,8 @@ function ResponsiveAppBar() {
               fontSize:25,
               color: 'inherit',
               textDecoration: 'none',
-              fontFamily:"poppins"
+              fontFamily:"poppins",
+              cursor:"pointer"
             }}
           >
             Karim
@@ -95,7 +116,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#home-section"
+            onClick={(e) => handleScroll(e, href)}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -104,7 +125,8 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
               fontSize:20,
-              fontFamily:"poppins"
+              fontFamily:"poppins",
+              cursor:"pointer"
             }}
           >
             Karim
@@ -115,7 +137,7 @@ function ResponsiveAppBar() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
                 key={text}
-                href={href}
+                onClick={(e) => handleScroll(e, href)}
                 sx={{ my: 2, color: 'white', display: 'block', fontFamily:"poppins" }}>
                 {text}
                   
@@ -152,8 +174,8 @@ function ResponsiveAppBar() {
               }}
             >
               {navbarItems.map(({text,href}) => (
-                <MenuItem key={text}  onClick={handleCloseNavMenu}>
-                  <Typography  textAlign="center"><Button href={href} sx={{color:"black", fontFamily:"poppins"}}>{text}</Button></Typography>
+                <MenuItem key={text}  onClick={(e) => handleScroll(e, href)}>
+                  <Typography textAlign="center"><Button sx={{color:"black", fontFamily:"poppins"}}>{text}</Button></Typography>
                 </MenuItem>
               ))}
             </Menu>
