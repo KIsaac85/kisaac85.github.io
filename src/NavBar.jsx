@@ -73,6 +73,7 @@ function ResponsiveAppBar() {
       window.scrollTo({ top: targetPosition, behavior: "smooth" }); // Smooth scroll
     }
   };
+  /*
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -80,7 +81,7 @@ function ResponsiveAppBar() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+*/
   
   return (
     <AppBar   position="fixed"  sx={{ backgroundColor : 'black', left:0} } >
