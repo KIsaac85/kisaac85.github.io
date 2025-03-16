@@ -93,7 +93,7 @@ function ContactMe() {
               <LocalPhoneIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20 }}/>
               </div>
               <h3 >Contact Number</h3>
-              <p><a href="tel://+201224033791">+49 152 57892262</a></p>
+              <p><a href="tel://+49 152 57892262">+49 152 57892262</a></p>
             </div>
 
             <div className="contact-icon-container main-flex-column">
