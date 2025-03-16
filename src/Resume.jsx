@@ -1,7 +1,7 @@
 import React  , { useState, useEffect } from "react";
 import  {StyledButton ,SmallStyledButton}  from './js/ButtonStyle';
-import CV from "../public/Karim ishak fahmy CV.pdf";
-import Certicates from "../public/Courses Certificates.pdf";
+//import CV from "../public/karim_ishak_fahmy_CV.pdf";
+//import Certicates from "../public/Courses Certificates.pdf";
 import { Stack} from '@mui/material';
 import CertificatesData from "./js/Certificates"
 import Certificates from "./Certificate.jsx"
@@ -48,8 +48,8 @@ function Resume() {
 				
     		
 			<Stack className='resume-middle '  spacing={20} direction={'row'}>
-			<a href={CV} download='Karim Ishak CV.pdf'>{width>600?<StyledButton variant="contained">Download CV</StyledButton>:<SmallStyledButton variant="contained">CV</SmallStyledButton>}</a>
-			<a href={Certicates} download='Karim Ishak Certificates.pdf'>{width>600?<StyledButton variant="contained">Certificates</StyledButton>:<SmallStyledButton variant="contained">Certificates</SmallStyledButton>}</a>
+			<a href={`${import.meta.env.BASE_URL}karim_ishak_fahmy_CV.pdf`} download='Karim Ishak CV.pdf'>{width>600?<StyledButton variant="contained">Download CV</StyledButton>:<SmallStyledButton variant="contained">CV</SmallStyledButton>}</a>
+			<a href={`${import.meta.env.BASE_URL}courses_certificates.pdf`} download='Karim Ishak Certificates.pdf'>{width>600?<StyledButton variant="contained">Certificates</StyledButton>:<SmallStyledButton variant="contained">Certificates</SmallStyledButton>}</a>
 			</Stack>
 			
     		
