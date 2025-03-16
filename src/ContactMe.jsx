@@ -84,7 +84,7 @@ function ContactMe() {
                 <HomeIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20}}/>
               </div>
               <h3 >Address</h3>
-              <p className="contact-text-centered">16 Abou Bakr elseddik street Dokki</p>
+              <p className="contact-text-centered">Wundstraße 9 1351 Dresden Germany</p>
             </div>
             
           
@@ -93,7 +93,7 @@ function ContactMe() {
               <LocalPhoneIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20 }}/>
               </div>
               <h3 >Contact Number</h3>
-              <p><a href="tel://+201224033791">+201224033791</a></p>
+              <p><a href="tel://+201224033791">+49 152 57892262</a></p>
             </div>
 
             <div className="contact-icon-container main-flex-column">

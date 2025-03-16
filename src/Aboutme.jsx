@@ -30,11 +30,11 @@ function Aboutme() {
         <li><span>Date of birth:</span> </li>
         <li><span className="main-grey-text">February 02, 1985</span></li>
         <li><span>Address:</span></li>
-        <li> <span className="main-grey-text">Cairo Egypt</span></li>
+        <li> <span className="main-grey-text">Dresden Germany</span></li>
         <li><span>Email:</span> </li>
         <li><span className="main-grey-text">karim_isaac85@hotmail.com</span></li>
         <li><span>Phone: </span> </li>
-        <li><span className="main-grey-text">+2012-240-33-791</span></li>
+        <li><span className="main-grey-text">+49 152 57892262</span></li>
     </ul>
     </div>
     </div>
