@@ -1,7 +1,7 @@
 import React  , { useState, useEffect } from "react";
 import  {StyledButton ,SmallStyledButton}  from './js/ButtonStyle';
-import CV from "./Resume/Karim ishak fahmy CV.pdf";
-import Certicates from "./Resume/Courses Certificates.pdf";
+import CV from "../public/Karim ishak fahmy CV.pdf";
+import Certicates from "../public/Courses Certificates.pdf";
 import { Stack} from '@mui/material';
 import CertificatesData from "./js/Certificates"
 import Certificates from "./Certificate.jsx"
