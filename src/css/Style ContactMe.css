@@ -68,7 +68,7 @@ img#contact-image{
         min-width: 96%;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .contact-title-shadow-mob{
         z-index: -1;
         position:absolute;

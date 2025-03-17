@@ -66,6 +66,9 @@ function ResponsiveAppBar() {
       const navbarHeight = navbar ? navbar.offsetHeight : 0;
       let extraOffset = 20; // Adjust this value for finer control
       if (targetId === "#skills-section" || targetId === "#projects-section"|| targetId === "#contact-section") {
+        extraOffset = -50; // Increase offset for these sections
+      }
+      if (targetId === "#projects-section"|| targetId === "#contact-section") {
         extraOffset = -300; // Increase offset for these sections
       }
       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight - extraOffset;

@@ -45,6 +45,12 @@ const Certificates = [
     cert:"Udemy",
     university:"Dr. Angela Yu",
     description: 'Full stack web development'
+},    {   
+    id:7,
+    year:"2024-Ongoing",
+    cert:"Masters Degree",
+    university:"TU Dresden",
+    description: 'ACCESS Bauingenieurwesen'
 }];
 
 export default Certificates;

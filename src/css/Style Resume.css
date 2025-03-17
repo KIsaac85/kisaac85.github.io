@@ -36,7 +36,7 @@
         padding: 30px;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .resume-title-shadow-mob{
         z-index: -1;
         position:absolute;

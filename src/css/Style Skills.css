@@ -1,10 +1,10 @@
 
-@media (min-width: 800px) and (max-width:1200px){
+@media (min-width: 800px) and (max-width:1250px){
     #skills-section{
         margin-top:  90rem;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   
     #skills-section{
         margin-top:  70rem;
@@ -20,7 +20,7 @@
         height: 50rem;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .skills-title-shadow-mob{
         z-index: -1;
         position:absolute;

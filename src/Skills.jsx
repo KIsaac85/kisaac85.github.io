@@ -4,7 +4,7 @@ import skillsImage from "./images/skills.png"
 
 function Skills() {
     return(
-        <section  id="skills-section" className="main-animate main-animate-range-40 main-top-space-20" >
+        <section  id="skills-section" className="main-animate main-animate-range-40 main-top-space-25" >
 			<div className="main-flex-column main-whole-width main-relative-position">
 			
           <div className="main-flex-column main-whole-width main-relative-position main-bottom-space">

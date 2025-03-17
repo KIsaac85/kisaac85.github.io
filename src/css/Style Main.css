@@ -67,7 +67,7 @@
         
     }
 }
-@media (max-width: 1201px) {
+@media (max-width: 1250px) {
     .main-font-title-mob {
         font-size: 2rem;
         }
@@ -88,8 +88,8 @@
     .main-top-space-10{
         margin-top: 85rem;
     }
-    .main-top-space-20{
-        margin-top: 105rem;
+    .main-top-space-25{
+        margin-top: 120rem;
     }
      .main-mob-image{
         position: relative;
