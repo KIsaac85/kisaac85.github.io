@@ -51,6 +51,7 @@
         .main-top-space-10{
             margin-top: 55rem;
         }
+        
 }
 @media (max-width: 599px) {
     .main-mob-image{
@@ -86,6 +87,9 @@
     }
     .main-top-space-10{
         margin-top: 85rem;
+    }
+    .main-top-space-20{
+        margin-top: 105rem;
     }
      .main-mob-image{
         position: relative;

@@ -1,13 +1,13 @@
 
 @media (min-width: 800px) and (max-width:1200px){
     #skills-section{
-        padding-top:  90rem;
+        margin-top:  90rem;
     }
 }
 @media (min-width: 1200px) {
   
     #skills-section{
-        padding-top:  20rem;
+        margin-top:  70rem;
     }
 }
 @media (min-width: 800px) {
@@ -42,6 +42,6 @@
         height: 20rem;
     }
 
-  
+ 
 
 }
