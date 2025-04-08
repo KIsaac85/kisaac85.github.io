@@ -39,7 +39,7 @@ function Home() {
             <h1>
               I'm <span>Karim Isaac</span>
             </h1>
-            <h2>Bim App Dev</h2>
+            <h2>BIM App Dev</h2>
           </div>
         </Fade>
         <Fade className="home-relBig-position" in={!checked} timeout={2500}>

@@ -6,7 +6,7 @@ import Resume from './Resume.jsx'
 import Skills from './Skills.jsx'
 import Projects from "./Projects.jsx"
 import ContactMe from './ContactMe.jsx'
-import Footer from './Footer.jsx'
+
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     <Skills/>
     <Projects/>
     <ContactMe/>
-    <Footer/>
+    
   </div>
     
    

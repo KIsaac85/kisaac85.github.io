@@ -84,7 +84,7 @@ function ContactMe() {
                 <HomeIcon className="contact-image-icon" sx={width>600?{fontSize:30}:{fontSize:20}}/>
               </div>
               <h3 >Address</h3>
-              <p className="contact-text-centered">Wundstraße 9 1351 Dresden Germany</p>
+              <p className="contact-text-centered">Dresden Germany</p>
             </div>
             
           
